@@ -141,6 +141,12 @@ We recommend using one of the following:</p><ul>
 </ul></td>
     </tr>
     <tr>
+      <th>asis</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Set this to <code>TRUE</code> when using the function inside a loop or inside an R
+Markdown chunk with '<code>results = "asis"</code>' enabled.</p></td>
+    </tr>
+    <tr>
       <th>assay</th>
       <td><p><code><a href='https://rdrr.io/r/base/vector.html'>vector(1)</a></code>.
 Name or index of count matrix slotted in
@@ -158,6 +164,12 @@ in as either a dense matrix (<code>matrix</code>) or sparse matrix (<code>sparse
       <th>base</th>
       <td><p><code><a href='https://rdrr.io/r/base/integer.html'>integer(1)</a></code>.
 Logarithm base.</p></td>
+    </tr>
+    <tr>
+      <th>captions</th>
+      <td><p><code>character</code> or <code>NULL</code>.
+Captions.
+If <code>NULL</code>, the names of the primary input list will be used automatically.</p></td>
     </tr>
     <tr>
       <th>cells</th>
@@ -263,8 +275,8 @@ symbols (e.g. "TSPN6"), if possible.</p></td>
       <th>genomeBuild</th>
       <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
 Ensembl genome build assembly name (e.g. <code>"GRCh38"</code>). If set <code>NULL</code>,
-defaults to the most recent build available. Note: don't pass in UCSC build
-IDs (e.g. <code>"hg38"</code>).</p></td>
+defaults to the most recent build available.
+Note: don't pass in UCSC build IDs (e.g. <code>"hg38"</code>).</p></td>
     </tr>
     <tr>
       <th>gffFile</th>
@@ -334,6 +346,10 @@ Number of top genes to label.</p></td>
       <th>nullOK</th>
       <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
 If set to <code>TRUE</code>, <code>x</code> may also be <code>NULL</code>.</p></td>
+    </tr>
+    <tr>
+      <th>ordered</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.</p></td>
     </tr>
     <tr>
       <th>organism</th>
@@ -409,6 +425,21 @@ Resort using <code>sort</code>.</p></td>
       <th>spikeNames</th>
       <td><p><code>character</code>.
 Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).</p></td>
+    </tr>
+    <tr>
+      <th>tabset</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Include tabset marker.</p></td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+Text.</p></td>
+    </tr>
+    <tr>
+      <th>title</th>
+      <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+Title.</p></td>
     </tr>
     <tr>
       <th>traceback</th>
