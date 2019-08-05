@@ -4,6 +4,12 @@
 \alias{params}
 \title{Shared parameter documentation}
 \arguments{
+\item{object}{Object.}
+
+\item{x}{Object.}
+
+\item{y}{Object.}
+
 \item{BPPARAM}{\code{bpparamClass}.
 BiocParallel parameter to specify the desired processor configuration.\cr
 We recommend using one of the following:
@@ -26,8 +32,20 @@ in as either a dense matrix (\code{matrix}) or sparse matrix (\code{sparseMatrix
 \item{base}{\code{integer(1)}.
 Logarithm base.}
 
+\item{cells}{\code{character}.
+Cell identifiers.}
+
 \item{censorSamples}{\code{character}.
 Specify a subset of samples to censor.}
+
+\item{class}{\code{character(1)}.
+Object class.}
+
+\item{classes}{\code{character}.
+Object classes.}
+
+\item{closed}{\code{logical(2)}.
+Should the lower (1) and upper (2) bounaries be closed?}
 
 \item{colData}{\code{DataFrame}.
 Metadata describing the assay columns. For bulk RNA-seq, this data
@@ -36,6 +54,10 @@ cells.}
 
 \item{colnames}{\code{logical(1)}.
 Apply to column names.}
+
+\item{compress}{\code{logical(1)} or \code{character(1)}.
+These character strings are currently allowed for \code{\link[base:save]{save()}}:
+\code{"gzip"}, \code{"bzip2"}, or \code{"xz"}.}
 
 \item{counts}{\code{matrix}.
 Count matrix. Normalized counts are recommended.}
@@ -51,9 +73,7 @@ available can vary, depending on the versions of AnnotationHub and
 ensembldb in use.}
 
 \item{envir}{\code{environment}.
-Environment to use for assignment. Defaults to
-\code{\link[base:parent.frame]{parent.frame()}}, which will assign into the calling
-environment.}
+Environment to use for assignment.}
 
 \item{expression}{\code{character(1)}.
 Calculation to apply.
@@ -62,6 +82,10 @@ argument in the \code{character} vector.}
 
 \item{file}{\code{character(1)}.
 File path.}
+
+\item{FUN}{\code{function}.}
+
+\item{fun}{\code{function}.}
 
 \item{gene2symbol}{\code{Gene2Symbol}.
 Gene-to-symbol mappings. Must contain \code{geneID} and \code{geneName} columns. See
@@ -100,8 +124,17 @@ Groups of interest that define the samples. If left unset, defaults to
 \item{level}{\code{character(1)}.
 Return as genes or transcripts.}
 
+\item{lower}{\code{numeric(1)}.
+Lower boundary.}
+
 \item{metadata}{\code{list}.
 Metadata.}
+
+\item{metric}{\code{character(1)}.
+Metric type, either \code{length} or \code{elements}.}
+
+\item{msg}{\code{NULL} or \code{character(1)}.
+Custom message to return.}
 
 \item{n}{\code{integer(1)}.
 Number to include.}
@@ -109,10 +142,14 @@ Number to include.}
 \item{ntop}{\code{integer(1)}.
 Number of top genes to label.}
 
-\item{object}{Object.}
+\item{nullOK}{\code{logical(1)}.
+If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
 
 \item{organism}{\code{character(1)}.
 Full Latin organism name (e.g. "\code{Homo sapiens}").}
+
+\item{pattern}{\code{character(1)}.
+Pattern to use for matching.}
 
 \item{prefilter}{\code{logical(1)}.
 Apply prefiltering. Remove zero count genes.}
@@ -122,6 +159,9 @@ Show progress, using progress bars.}
 
 \item{reducedDims}{\code{SimpleList}.
 List containing matrices of cell coordinates in reduced space.}
+
+\item{removeNA}{\code{logical(1)}.
+Remove \code{NA} values from calculations.}
 
 \item{return}{\code{character(1)}.
 Return type. Uses \code{\link[base:match.arg]{match.arg()}} internally and defaults
@@ -144,13 +184,18 @@ are also supported. Check the documentation for conventions and required
 columns.}
 
 \item{samples}{\code{character}.
-Specify a subset of samples to include.}
+Sample identifiers.}
 
 \item{sort}{\code{logical(1)}.
 Resort using \code{sort}.}
 
 \item{spikeNames}{\code{character}.
 Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).}
+
+\item{traceback}{\code{logical(1)}.
+Include traceback in error message.
+See \code{\link[base:traceback]{traceback()}} for details.
+\code{rlang::entrace()} also works nicely and can be set in \code{.Rprofile}.}
 
 \item{transgeneNames}{\code{character}.
 Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).}
@@ -161,29 +206,27 @@ Transcript-to-gene mappings.}
 \item{unicode}{\code{logical(1)}.
 Allow Unicode characters in console output.}
 
+\item{upper}{\code{numeric(1)}.
+Upper boundary.}
+
 \item{url}{\code{character(1)}.
 Uniform Resource Locator (URL).}
 
 \item{value}{Value to assign.}
 
 \item{verbose}{\code{logical(1)}.
-Verbose output, typically for debugging.}
-
-\item{x}{Object.}
-
-\item{...}{Additional arguments.}
-
-\item{cells}{\code{character}.
-Cell identifiers.}
-
-\item{samples}{\code{character}.
-Sample identifiers.}
-
-\item{removeNA}{\code{logical(1)}.
-Remove \code{NA} values from calculations.}
+Run the function with verbose output.}
 
 \item{zeroPropagate}{\code{logical(1)}.
 Allow propagation of zeroes.}
+
+\item{.xname}{Name of object defined in \code{x}.
+\emph{Not intended to be used directly.}}
+
+\item{.yname}{Name of object defined in \code{y}.
+\emph{Not intended to be used directly.}}
+
+\item{...}{Additional arguments.}
 }
 \value{
 No value.
