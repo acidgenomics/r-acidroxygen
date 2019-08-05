@@ -1,7 +1,6 @@
 #' Shared parameter documentation
 #'
 #' @name params
-#' @keywords internal
 #'
 #' @param BPPARAM `bpparamClass`.
 #'   BiocParallel parameter to specify the desired processor configuration.\cr

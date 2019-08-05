@@ -173,4 +173,3 @@ No value.
 \description{
 Shared parameter documentation
 }
-\keyword{internal}
