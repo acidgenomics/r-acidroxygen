@@ -13,6 +13,9 @@
 #'   - [bpparam][BiocParallel::bpparam].
 #'   - [SerialParam][BiocParallel::SerialParam].
 #'   - [MulticoreParam][BiocParallel::MulticoreParam].
+#' @param asis `logical(1)`.
+#'   Set this to `TRUE` when using the function inside a loop or inside an R
+#'   Markdown chunk with '`results = "asis"`' enabled.
 #' @param assay `vector(1)`.
 #'   Name or index of count matrix slotted in
 #'   [`assays()`][SummarizedExperiment::assays]. When passing in a string, the
@@ -23,6 +26,9 @@
 #'   in as either a dense matrix (`matrix`) or sparse matrix (`sparseMatrix`).
 #' @param base `integer(1)`.
 #'   Logarithm base.
+#' @param captions `character` or `NULL`.
+#'   Captions.
+#'   If `NULL`, the names of the primary input list will be used automatically.
 #' @param cells `character`.
 #'   Cell identifiers.
 #' @param censorSamples `character`.
@@ -71,8 +77,8 @@
 #'   symbols (e.g. "TSPN6"), if possible.
 #' @param genomeBuild `character(1)`.
 #'   Ensembl genome build assembly name (e.g. `"GRCh38"`). If set `NULL`,
-#'   defaults to the most recent build available. Note: don't pass in UCSC build
-#'   IDs (e.g. `"hg38"`).
+#'   defaults to the most recent build available.
+#'   Note: don't pass in UCSC build IDs (e.g. `"hg38"`).
 #' @param gffFile `character(1)`.
 #'   GFF/GTF (General Feature Format) file. Generally, we recommend using a GTF
 #'   (GFFv2) instead of a GFFv3 file if possible.
@@ -108,6 +114,7 @@
 #'   Number of top genes to label.
 #' @param nullOK `logical(1)`.
 #'   If set to `TRUE`, `x` may also be `NULL`.
+#' @param ordered `logical(1)`.
 #' @param organism `character(1)`.
 #'   Full Latin organism name (e.g. "`Homo sapiens`").
 #' @param pattern `character(1)`.
@@ -141,6 +148,12 @@
 #'   Resort using `sort`.
 #' @param spikeNames `character`.
 #'   Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).
+#' @param tabset `logical(1)`.
+#'   Include tabset marker.
+#' @param text `character(1)`.
+#'   Text.
+#' @param title `character(1)`.
+#'   Title.
 #' @param traceback `logical(1)`.
 #'   Include traceback in error message.
 #'   See [`traceback()`][base::traceback] for details.

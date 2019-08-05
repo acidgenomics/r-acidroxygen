@@ -19,6 +19,10 @@ We recommend using one of the following:
 \item \link[BiocParallel:MulticoreParam]{MulticoreParam}.
 }}
 
+\item{asis}{\code{logical(1)}.
+Set this to \code{TRUE} when using the function inside a loop or inside an R
+Markdown chunk with '\code{results = "asis"}' enabled.}
+
 \item{assay}{\code{vector(1)}.
 Name or index of count matrix slotted in
 \code{\link[SummarizedExperiment:assays]{assays()}}. When passing in a string, the
@@ -31,6 +35,10 @@ in as either a dense matrix (\code{matrix}) or sparse matrix (\code{sparseMatrix
 
 \item{base}{\code{integer(1)}.
 Logarithm base.}
+
+\item{captions}{\code{character} or \code{NULL}.
+Captions.
+If \code{NULL}, the names of the primary input list will be used automatically.}
 
 \item{cells}{\code{character}.
 Cell identifiers.}
@@ -98,8 +106,8 @@ symbols (e.g. "TSPN6"), if possible.}
 
 \item{genomeBuild}{\code{character(1)}.
 Ensembl genome build assembly name (e.g. \code{"GRCh38"}). If set \code{NULL},
-defaults to the most recent build available. Note: don't pass in UCSC build
-IDs (e.g. \code{"hg38"}).}
+defaults to the most recent build available.
+Note: don't pass in UCSC build IDs (e.g. \code{"hg38"}).}
 
 \item{gffFile}{\code{character(1)}.
 GFF/GTF (General Feature Format) file. Generally, we recommend using a GTF
@@ -144,6 +152,8 @@ Number of top genes to label.}
 
 \item{nullOK}{\code{logical(1)}.
 If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
+
+\item{ordered}{\code{logical(1)}.}
 
 \item{organism}{\code{character(1)}.
 Full Latin organism name (e.g. "\code{Homo sapiens}").}
@@ -191,6 +201,15 @@ Resort using \code{sort}.}
 
 \item{spikeNames}{\code{character}.
 Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).}
+
+\item{tabset}{\code{logical(1)}.
+Include tabset marker.}
+
+\item{text}{\code{character(1)}.
+Text.}
+
+\item{title}{\code{character(1)}.
+Title.}
 
 \item{traceback}{\code{logical(1)}.
 Include traceback in error message.
