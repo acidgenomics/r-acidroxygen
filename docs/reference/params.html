@@ -119,6 +119,18 @@
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
+      <th>object</th>
+      <td><p>Object.</p></td>
+    </tr>
+    <tr>
+      <th>x</th>
+      <td><p>Object.</p></td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td><p>Object.</p></td>
+    </tr>
+    <tr>
       <th>BPPARAM</th>
       <td><p><code>bpparamClass</code>.
 BiocParallel parameter to specify the desired processor configuration.<br />
@@ -148,9 +160,29 @@ in as either a dense matrix (<code>matrix</code>) or sparse matrix (<code>sparse
 Logarithm base.</p></td>
     </tr>
     <tr>
+      <th>cells</th>
+      <td><p><code>character</code>.
+Cell identifiers.</p></td>
+    </tr>
+    <tr>
       <th>censorSamples</th>
       <td><p><code>character</code>.
 Specify a subset of samples to censor.</p></td>
+    </tr>
+    <tr>
+      <th>class</th>
+      <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+Object class.</p></td>
+    </tr>
+    <tr>
+      <th>classes</th>
+      <td><p><code>character</code>.
+Object classes.</p></td>
+    </tr>
+    <tr>
+      <th>closed</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(2)</a></code>.
+Should the lower (1) and upper (2) bounaries be closed?</p></td>
     </tr>
     <tr>
       <th>colData</th>
@@ -163,6 +195,12 @@ cells.</p></td>
       <th>colnames</th>
       <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
 Apply to column names.</p></td>
+    </tr>
+    <tr>
+      <th>compress</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code> or <code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+These character strings are currently allowed for <code><a href='https://rdrr.io/r/base/save.html'>save()</a></code>:
+<code>"gzip"</code>, <code>"bzip2"</code>, or <code>"xz"</code>.</p></td>
     </tr>
     <tr>
       <th>counts</th>
@@ -186,9 +224,7 @@ ensembldb in use.</p></td>
     <tr>
       <th>envir</th>
       <td><p><code>environment</code>.
-Environment to use for assignment. Defaults to
-<code><a href='https://rdrr.io/r/base/sys.parent.html'>parent.frame()</a></code>, which will assign into the calling
-environment.</p></td>
+Environment to use for assignment.</p></td>
     </tr>
     <tr>
       <th>expression</th>
@@ -201,6 +237,14 @@ argument in the <code>character</code> vector.</p></td>
       <th>file</th>
       <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
 File path.</p></td>
+    </tr>
+    <tr>
+      <th>FUN</th>
+      <td><p><code>function</code>.</p></td>
+    </tr>
+    <tr>
+      <th>fun</th>
+      <td><p><code>function</code>.</p></td>
     </tr>
     <tr>
       <th>gene2symbol</th>
@@ -257,9 +301,24 @@ Groups of interest that define the samples. If left unset, defaults to
 Return as genes or transcripts.</p></td>
     </tr>
     <tr>
+      <th>lower</th>
+      <td><p><code><a href='https://rdrr.io/r/base/numeric.html'>numeric(1)</a></code>.
+Lower boundary.</p></td>
+    </tr>
+    <tr>
       <th>metadata</th>
       <td><p><code>list</code>.
 Metadata.</p></td>
+    </tr>
+    <tr>
+      <th>metric</th>
+      <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+Metric type, either <code>length</code> or <code>elements</code>.</p></td>
+    </tr>
+    <tr>
+      <th>msg</th>
+      <td><p><code>NULL</code> or <code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+Custom message to return.</p></td>
     </tr>
     <tr>
       <th>n</th>
@@ -272,13 +331,19 @@ Number to include.</p></td>
 Number of top genes to label.</p></td>
     </tr>
     <tr>
-      <th>object</th>
-      <td><p>Object.</p></td>
+      <th>nullOK</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+If set to <code>TRUE</code>, <code>x</code> may also be <code>NULL</code>.</p></td>
     </tr>
     <tr>
       <th>organism</th>
       <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
 Full Latin organism name (e.g. "<code>Homo sapiens</code>").</p></td>
+    </tr>
+    <tr>
+      <th>pattern</th>
+      <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
+Pattern to use for matching.</p></td>
     </tr>
     <tr>
       <th>prefilter</th>
@@ -294,6 +359,11 @@ Show progress, using progress bars.</p></td>
       <th>reducedDims</th>
       <td><p><code>SimpleList</code>.
 List containing matrices of cell coordinates in reduced space.</p></td>
+    </tr>
+    <tr>
+      <th>removeNA</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Remove <code>NA</code> values from calculations.</p></td>
     </tr>
     <tr>
       <th>return</th>
@@ -328,7 +398,7 @@ columns.</p></td>
     <tr>
       <th>samples</th>
       <td><p><code>character</code>.
-Specify a subset of samples to include.</p></td>
+Sample identifiers.</p></td>
     </tr>
     <tr>
       <th>sort</th>
@@ -339,6 +409,13 @@ Resort using <code>sort</code>.</p></td>
       <th>spikeNames</th>
       <td><p><code>character</code>.
 Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).</p></td>
+    </tr>
+    <tr>
+      <th>traceback</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Include traceback in error message.
+See <code><a href='https://rdrr.io/r/base/traceback.html'>traceback()</a></code> for details.
+<code><a href='https://rlang.r-lib.org/reference/entrace.html'>rlang::entrace()</a></code> also works nicely and can be set in <code>.Rprofile</code>.</p></td>
     </tr>
     <tr>
       <th>transgeneNames</th>
@@ -356,6 +433,11 @@ Transcript-to-gene mappings.</p></td>
 Allow Unicode characters in console output.</p></td>
     </tr>
     <tr>
+      <th>upper</th>
+      <td><p><code><a href='https://rdrr.io/r/base/numeric.html'>numeric(1)</a></code>.
+Upper boundary.</p></td>
+    </tr>
+    <tr>
       <th>url</th>
       <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
 Uniform Resource Locator (URL).</p></td>
@@ -367,35 +449,26 @@ Uniform Resource Locator (URL).</p></td>
     <tr>
       <th>verbose</th>
       <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
-Verbose output, typically for debugging.</p></td>
-    </tr>
-    <tr>
-      <th>x</th>
-      <td><p>Object.</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>Additional arguments.</p></td>
-    </tr>
-    <tr>
-      <th>cells</th>
-      <td><p><code>character</code>.
-Cell identifiers.</p></td>
-    </tr>
-    <tr>
-      <th>samples</th>
-      <td><p><code>character</code>.
-Sample identifiers.</p></td>
-    </tr>
-    <tr>
-      <th>removeNA</th>
-      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
-Remove <code>NA</code> values from calculations.</p></td>
+Run the function with verbose output.</p></td>
     </tr>
     <tr>
       <th>zeroPropagate</th>
       <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
 Allow propagation of zeroes.</p></td>
+    </tr>
+    <tr>
+      <th>.xname</th>
+      <td><p>Name of object defined in <code>x</code>.
+<em>Not intended to be used directly.</em></p></td>
+    </tr>
+    <tr>
+      <th>.yname</th>
+      <td><p>Name of object defined in <code>y</code>.
+<em>Not intended to be used directly.</em></p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>Additional arguments.</p></td>
     </tr>
     </table>
     
