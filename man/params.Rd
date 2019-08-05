@@ -167,6 +167,9 @@ Apply prefiltering. Remove zero count genes.}
 \item{progress}{\code{logical(1)}.
 Show progress, using progress bars.}
 
+\item{projectDir}{\code{character(1)}.
+Project directory path.}
+
 \item{reducedDims}{\code{SimpleList}.
 List containing matrices of cell coordinates in reduced space.}
 
@@ -225,6 +228,9 @@ Transcript-to-gene mappings.}
 \item{unicode}{\code{logical(1)}.
 Allow Unicode characters in console output.}
 
+\item{uploadDir}{\code{character(1)}.
+Final upload directory path.}
+
 \item{upper}{\code{numeric(1)}.
 Upper boundary.}
 
@@ -235,6 +241,9 @@ Uniform Resource Locator (URL).}
 
 \item{verbose}{\code{logical(1)}.
 Run the function with verbose output.}
+
+\item{yaml}{\code{list}.
+YAML metadata.}
 
 \item{zeroPropagate}{\code{logical(1)}.
 Allow propagation of zeroes.}
