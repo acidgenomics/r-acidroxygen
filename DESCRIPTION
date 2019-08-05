@@ -1,0 +1,28 @@
+Package: acidroxygen
+Title: Shared Documentation Files for R Packages
+Description: Generate your Rd documentation using shared snippets. Particularly
+    useful for improving consistency of param and return arguments.
+Version: 0.0.1
+Date: 2019-08-05
+Authors@R: c(
+    person(
+        "Michael", "Steinbaugh",
+        email = "mike@steinbaugh.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-2403-2221")
+    ),
+    person(
+        given = "Acid Genomics",
+        role = c("cph", "fnd")
+    ))
+URL:
+    https://acidroxygen.acidgenomics.com/,
+    https://github.com/acidgenomics/acidroxygen/
+BugReports: https://github.com/acidgenomics/acidroxygen/issues/
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Suggests: roxygen2 (>= 6.1)
+biocViews: Infrastructure
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
