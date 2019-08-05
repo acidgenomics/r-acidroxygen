@@ -17,6 +17,8 @@
 #' @param assays `SimpleList`.
 #'   Count matrices, which must have matching dimensions. Counts can be passed
 #'   in as either a dense matrix (`matrix`) or sparse matrix (`sparseMatrix`).
+#' @param base `integer(1)`.
+#'   Logarithm base.
 #' @param censorSamples `character`.
 #'   Specify a subset of samples to censor.
 #' @param colData `DataFrame`.
@@ -117,13 +119,25 @@
 #'   Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).
 #' @param tx2gene `Tx2Gene`.
 #'   Transcript-to-gene mappings.
+#' @param unicode `logical(1)`.
+#'   Allow Unicode characters in console output.
 #' @param url `character(1)`.
-#'   Uniform Resource Locator (URL). HTTP or FTP address.
+#'   Uniform Resource Locator (URL).
 #' @param value Value to assign.
 #' @param verbose `logical(1)`.
 #'   Verbose output, typically for debugging.
 #' @param x Object.
 #' @param ... Additional arguments.
+#'
+#' @param cells `character`.
+#'   Cell identifiers.
+#' @param samples `character`.
+#'   Sample identifiers.
+#'
+#' @param removeNA `logical(1)`.
+#'   Remove `NA` values from calculations.
+#' @param zeroPropagate `logical(1)`.
+#'   Allow propagation of zeroes.
 #'
 #' @return No value.
 NULL

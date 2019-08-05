@@ -143,6 +143,11 @@ Count matrices, which must have matching dimensions. Counts can be passed
 in as either a dense matrix (<code>matrix</code>) or sparse matrix (<code>sparseMatrix</code>).</p></td>
     </tr>
     <tr>
+      <th>base</th>
+      <td><p><code><a href='https://rdrr.io/r/base/integer.html'>integer(1)</a></code>.
+Logarithm base.</p></td>
+    </tr>
+    <tr>
       <th>censorSamples</th>
       <td><p><code>character</code>.
 Specify a subset of samples to censor.</p></td>
@@ -346,9 +351,14 @@ Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).</p><
 Transcript-to-gene mappings.</p></td>
     </tr>
     <tr>
+      <th>unicode</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Allow Unicode characters in console output.</p></td>
+    </tr>
+    <tr>
       <th>url</th>
       <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code>.
-Uniform Resource Locator (URL). HTTP or FTP address.</p></td>
+Uniform Resource Locator (URL).</p></td>
     </tr>
     <tr>
       <th>value</th>
@@ -366,6 +376,26 @@ Verbose output, typically for debugging.</p></td>
     <tr>
       <th>...</th>
       <td><p>Additional arguments.</p></td>
+    </tr>
+    <tr>
+      <th>cells</th>
+      <td><p><code>character</code>.
+Cell identifiers.</p></td>
+    </tr>
+    <tr>
+      <th>samples</th>
+      <td><p><code>character</code>.
+Sample identifiers.</p></td>
+    </tr>
+    <tr>
+      <th>removeNA</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Remove <code>NA</code> values from calculations.</p></td>
+    </tr>
+    <tr>
+      <th>zeroPropagate</th>
+      <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
+Allow propagation of zeroes.</p></td>
     </tr>
     </table>
     

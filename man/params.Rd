@@ -23,6 +23,9 @@ name must be defined in
 Count matrices, which must have matching dimensions. Counts can be passed
 in as either a dense matrix (\code{matrix}) or sparse matrix (\code{sparseMatrix}).}
 
+\item{base}{\code{integer(1)}.
+Logarithm base.}
+
 \item{censorSamples}{\code{character}.
 Specify a subset of samples to censor.}
 
@@ -155,8 +158,11 @@ Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).}
 \item{tx2gene}{\code{Tx2Gene}.
 Transcript-to-gene mappings.}
 
+\item{unicode}{\code{logical(1)}.
+Allow Unicode characters in console output.}
+
 \item{url}{\code{character(1)}.
-Uniform Resource Locator (URL). HTTP or FTP address.}
+Uniform Resource Locator (URL).}
 
 \item{value}{Value to assign.}
 
@@ -166,6 +172,18 @@ Verbose output, typically for debugging.}
 \item{x}{Object.}
 
 \item{...}{Additional arguments.}
+
+\item{cells}{\code{character}.
+Cell identifiers.}
+
+\item{samples}{\code{character}.
+Sample identifiers.}
+
+\item{removeNA}{\code{logical(1)}.
+Remove \code{NA} values from calculations.}
+
+\item{zeroPropagate}{\code{logical(1)}.
+Allow propagation of zeroes.}
 }
 \value{
 No value.
