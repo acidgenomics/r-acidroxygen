@@ -123,6 +123,8 @@
 #'   Apply prefiltering. Remove zero count genes.
 #' @param progress `logical(1)`.
 #'   Show progress, using progress bars.
+#' @param projectDir `character(1)`.
+#'   Project directory path.
 #' @param reducedDims `SimpleList`.
 #'   List containing matrices of cell coordinates in reduced space.
 #' @param removeNA `logical(1)`.
@@ -164,6 +166,8 @@
 #'   Transcript-to-gene mappings.
 #' @param unicode `logical(1)`.
 #'   Allow Unicode characters in console output.
+#' @param uploadDir `character(1)`.
+#'   Final upload directory path.
 #' @param upper `numeric(1)`.
 #'   Upper boundary.
 #' @param url `character(1)`.
@@ -171,6 +175,8 @@
 #' @param value Value to assign.
 #' @param verbose `logical(1)`.
 #'   Run the function with verbose output.
+#' @param yaml `list`.
+#'   YAML metadata.
 #' @param zeroPropagate `logical(1)`.
 #'   Allow propagation of zeroes.
 #'
