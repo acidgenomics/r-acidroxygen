@@ -2,6 +2,10 @@
 #'
 #' @name params
 #'
+#' @param object Object.
+#' @param x Object.
+#' @param y Object.
+#'
 #' @param BPPARAM `bpparamClass`.
 #'   BiocParallel parameter to specify the desired processor configuration.\cr
 #'   We recommend using one of the following:
@@ -19,14 +23,25 @@
 #'   in as either a dense matrix (`matrix`) or sparse matrix (`sparseMatrix`).
 #' @param base `integer(1)`.
 #'   Logarithm base.
+#' @param cells `character`.
+#'   Cell identifiers.
 #' @param censorSamples `character`.
 #'   Specify a subset of samples to censor.
+#' @param class `character(1)`.
+#'   Object class.
+#' @param classes `character`.
+#'   Object classes.
+#' @param closed `logical(2)`.
+#'   Should the lower (1) and upper (2) bounaries be closed?
 #' @param colData `DataFrame`.
 #'   Metadata describing the assay columns. For bulk RNA-seq, this data
 #'   describes the samples. For single-cell RNA-seq, this data describes the
 #'   cells.
 #' @param colnames `logical(1)`.
 #'   Apply to column names.
+#' @param compress `logical(1)` or `character(1)`.
+#'   These character strings are currently allowed for [`save()`][base::save]:
+#'   `"gzip"`, `"bzip2"`, or `"xz"`.
 #' @param counts `matrix`.
 #'   Count matrix. Normalized counts are recommended.
 #' @param dir `character(1)`.
@@ -38,15 +53,15 @@
 #'   available can vary, depending on the versions of AnnotationHub and
 #'   ensembldb in use.
 #' @param envir `environment`.
-#'   Environment to use for assignment. Defaults to
-#'   [`parent.frame()`][base::parent.frame], which will assign into the calling
-#'   environment.
+#'   Environment to use for assignment.
 #' @param expression `character(1)`.
 #'   Calculation to apply.
 #'   Uses [`match.arg()`][base::match.arg] internally and defaults to the first
 #'   argument in the `character` vector.
 #' @param file `character(1)`.
 #'   File path.
+#' @param FUN `function`.
+#' @param fun `function`.
 #' @param gene2symbol `Gene2Symbol`.
 #'   Gene-to-symbol mappings. Must contain `geneID` and `geneName` columns. See
 #'   `Gene2Symbol` for more information.
@@ -79,21 +94,32 @@
 #'   `sampleName`.
 #' @param level `character(1)`.
 #'   Return as genes or transcripts.
+#' @param lower `numeric(1)`.
+#'   Lower boundary.
 #' @param metadata `list`.
 #'   Metadata.
+#' @param metric `character(1)`.
+#'   Metric type, either `length` or `elements`.
+#' @param msg `NULL` or `character(1)`.
+#'   Custom message to return.
 #' @param n `integer(1)`.
 #'   Number to include.
 #' @param ntop `integer(1)`.
 #'   Number of top genes to label.
-#' @param object Object.
+#' @param nullOK `logical(1)`.
+#'   If set to `TRUE`, `x` may also be `NULL`.
 #' @param organism `character(1)`.
 #'   Full Latin organism name (e.g. "`Homo sapiens`").
+#' @param pattern `character(1)`.
+#'   Pattern to use for matching.
 #' @param prefilter `logical(1)`.
 #'   Apply prefiltering. Remove zero count genes.
 #' @param progress `logical(1)`.
 #'   Show progress, using progress bars.
 #' @param reducedDims `SimpleList`.
 #'   List containing matrices of cell coordinates in reduced space.
+#' @param removeNA `logical(1)`.
+#'   Remove `NA` values from calculations.
 #' @param return `character(1)`.
 #'   Return type. Uses [`match.arg()`][base::match.arg] internally and defaults
 #'   to the first argument in the `character` vector.
@@ -110,34 +136,37 @@
 #'   are also supported. Check the documentation for conventions and required
 #'   columns.
 #' @param samples `character`.
-#'   Specify a subset of samples to include.
+#'   Sample identifiers.
 #' @param sort `logical(1)`.
 #'   Resort using `sort`.
 #' @param spikeNames `character`.
 #'   Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).
+#' @param traceback `logical(1)`.
+#'   Include traceback in error message.
+#'   See [`traceback()`][base::traceback] for details.
+#'  `rlang::entrace()` also works nicely and can be set in `.Rprofile`.
 #' @param transgeneNames `character`.
 #'   Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).
 #' @param tx2gene `Tx2Gene`.
 #'   Transcript-to-gene mappings.
 #' @param unicode `logical(1)`.
 #'   Allow Unicode characters in console output.
+#' @param upper `numeric(1)`.
+#'   Upper boundary.
 #' @param url `character(1)`.
 #'   Uniform Resource Locator (URL).
 #' @param value Value to assign.
 #' @param verbose `logical(1)`.
-#'   Verbose output, typically for debugging.
-#' @param x Object.
-#' @param ... Additional arguments.
-#'
-#' @param cells `character`.
-#'   Cell identifiers.
-#' @param samples `character`.
-#'   Sample identifiers.
-#'
-#' @param removeNA `logical(1)`.
-#'   Remove `NA` values from calculations.
+#'   Run the function with verbose output.
 #' @param zeroPropagate `logical(1)`.
 #'   Allow propagation of zeroes.
+#'
+#' @param .xname Name of object defined in `x`.
+#'   *Not intended to be used directly.*
+#' @param .yname Name of object defined in `y`.
+#'   *Not intended to be used directly.*
+#'
+#' @param ... Additional arguments.
 #'
 #' @return No value.
 NULL
