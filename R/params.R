@@ -59,7 +59,7 @@
 #'   available can vary, depending on the versions of AnnotationHub and
 #'   ensembldb in use.
 #' @param envir `environment`.
-#'   Environment to use for assignment.
+#'   Environment.
 #' @param expression `character(1)`.
 #'   Calculation to apply.
 #'   Uses [`match.arg()`][base::match.arg] internally and defaults to the first
@@ -117,6 +117,8 @@
 #' @param ordered `logical(1)`.
 #' @param organism `character(1)`.
 #'   Full Latin organism name (e.g. "`Homo sapiens`").
+#' @param overwrite `logical(1)`.
+#'   Overwrite existing file on disk.
 #' @param pattern `character(1)`.
 #'   Pattern to use for matching.
 #' @param prefilter `logical(1)`.
