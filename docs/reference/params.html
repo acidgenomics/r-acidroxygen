@@ -143,6 +143,12 @@ We recommend using one of the following:</p><ul>
 </ul></td>
     </tr>
     <tr>
+      <th>alpha</th>
+      <td><p><code><a href='https://rdrr.io/r/base/numeric.html'>numeric(1)</a></code>.
+Adjusted P value ("alpha") cutoff. If left <code>NULL</code>, will use the cutoff
+defined in the object.</p></td>
+    </tr>
+    <tr>
       <th>asis</th>
       <td><p><code><a href='https://rdrr.io/r/base/logical.html'>logical(1)</a></code>.
 Set this to <code>TRUE</code> when using the function inside a loop or inside an R
@@ -151,10 +157,7 @@ Markdown chunk with '<code>results = "asis"</code>' enabled.</p></td>
     <tr>
       <th>assay</th>
       <td><p><code><a href='https://rdrr.io/r/base/vector.html'>vector(1)</a></code>.
-Name or index of count matrix slotted in
-<code><a href='https://rdrr.io/pkg/SummarizedExperiment/man/SummarizedExperiment-class.html'>assays()</a></code>. When passing in a string, the
-name must be defined in
-<code><a href='https://rdrr.io/pkg/SummarizedExperiment/man/SummarizedExperiment-class.html'>assayNames()</a></code>.</p></td>
+Assay name or index position.</p></td>
     </tr>
     <tr>
       <th>assays</th>
@@ -387,6 +390,11 @@ Project directory path.</p></td>
       <th>reducedDims</th>
       <td><p><code>SimpleList</code>.
 List containing matrices of cell coordinates in reduced space.</p></td>
+    </tr>
+    <tr>
+      <th>reduction</th>
+      <td><p><code><a href='https://rdrr.io/r/base/vector.html'>vector(1)</a></code>.
+Dimension reduction name or index position.</p></td>
     </tr>
     <tr>
       <th>removeNA</th>

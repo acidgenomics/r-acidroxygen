@@ -19,15 +19,16 @@ We recommend using one of the following:
 \item \link[BiocParallel:MulticoreParam]{MulticoreParam}.
 }}
 
+\item{alpha}{\code{numeric(1)}.
+Adjusted P value ("alpha") cutoff. If left \code{NULL}, will use the cutoff
+defined in the object.}
+
 \item{asis}{\code{logical(1)}.
 Set this to \code{TRUE} when using the function inside a loop or inside an R
 Markdown chunk with '\code{results = "asis"}' enabled.}
 
 \item{assay}{\code{vector(1)}.
-Name or index of count matrix slotted in
-\code{\link[SummarizedExperiment:assays]{assays()}}. When passing in a string, the
-name must be defined in
-\code{\link[SummarizedExperiment:assayNames]{assayNames()}}.}
+Assay name or index position.}
 
 \item{assays}{\code{SimpleList}.
 Count matrices, which must have matching dimensions. Counts can be passed
@@ -175,6 +176,9 @@ Project directory path.}
 
 \item{reducedDims}{\code{SimpleList}.
 List containing matrices of cell coordinates in reduced space.}
+
+\item{reduction}{\code{vector(1)}.
+Dimension reduction name or index position.}
 
 \item{removeNA}{\code{logical(1)}.
 Remove \code{NA} values from calculations.}

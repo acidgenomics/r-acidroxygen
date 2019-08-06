@@ -13,14 +13,14 @@
 #'   - [bpparam][BiocParallel::bpparam].
 #'   - [SerialParam][BiocParallel::SerialParam].
 #'   - [MulticoreParam][BiocParallel::MulticoreParam].
+#' @param alpha `numeric(1)`.
+#'   Adjusted P value ("alpha") cutoff. If left `NULL`, will use the cutoff
+#'   defined in the object.
 #' @param asis `logical(1)`.
 #'   Set this to `TRUE` when using the function inside a loop or inside an R
 #'   Markdown chunk with '`results = "asis"`' enabled.
 #' @param assay `vector(1)`.
-#'   Name or index of count matrix slotted in
-#'   [`assays()`][SummarizedExperiment::assays]. When passing in a string, the
-#'   name must be defined in
-#'   [`assayNames()`][SummarizedExperiment::assayNames].
+#'   Assay name or index position.
 #' @param assays `SimpleList`.
 #'   Count matrices, which must have matching dimensions. Counts can be passed
 #'   in as either a dense matrix (`matrix`) or sparse matrix (`sparseMatrix`).
@@ -129,6 +129,8 @@
 #'   Project directory path.
 #' @param reducedDims `SimpleList`.
 #'   List containing matrices of cell coordinates in reduced space.
+#' @param reduction `vector(1)`.
+#'   Dimension reduction name or index position.
 #' @param removeNA `logical(1)`.
 #'   Remove `NA` values from calculations.
 #' @param return `character(1)`.
