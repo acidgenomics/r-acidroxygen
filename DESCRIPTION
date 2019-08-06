@@ -3,7 +3,7 @@ Title: Shared Documentation Files for R Packages
 Description: Generate your Rd documentation using shared snippets. Particularly
     useful for improving consistency of param and return arguments.
 Version: 0.0.1
-Date: 2019-08-05
+Date: 2019-08-06
 Authors@R: c(
     person(
         "Michael", "Steinbaugh",
