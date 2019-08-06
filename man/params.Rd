@@ -81,7 +81,7 @@ available can vary, depending on the versions of AnnotationHub and
 ensembldb in use.}
 
 \item{envir}{\code{environment}.
-Environment to use for assignment.}
+Environment.}
 
 \item{expression}{\code{character(1)}.
 Calculation to apply.
@@ -157,6 +157,9 @@ If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
 
 \item{organism}{\code{character(1)}.
 Full Latin organism name (e.g. "\code{Homo sapiens}").}
+
+\item{overwrite}{\code{logical(1)}.
+Overwrite existing file on disk.}
 
 \item{pattern}{\code{character(1)}.
 Pattern to use for matching.}
