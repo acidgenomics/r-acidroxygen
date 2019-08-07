@@ -27,6 +27,9 @@ defined in the object.}
 Set this to \code{TRUE} when using the function inside a loop or inside an R
 Markdown chunk with '\code{results = "asis"}' enabled.}
 
+\item{aspectRatio}{\code{integer(1)}.
+Aspect ratio.}
+
 \item{assay}{\code{vector(1)}.
 Assay name or index position.}
 
@@ -36,6 +39,9 @@ in as either a dense matrix (\code{matrix}) or sparse matrix (\code{sparseMatrix
 
 \item{base}{\code{integer(1)}.
 Logarithm base.}
+
+\item{borderColor}{\code{character(1)} or \code{NULL}.
+Border color.}
 
 \item{captions}{\code{character} or \code{NULL}.
 Captions.
@@ -64,6 +70,14 @@ cells.}
 \item{colnames}{\code{logical(1)}.
 Apply to column names.}
 
+\item{color}{\code{ScaleDiscrete}.
+Desired ggplot2 color scale. Must supply discrete values. When set \code{NULL},
+the default ggplot2 color palette will be used. If manual color definitions
+are desired, we recommend using \code{\link[ggplot2:scale_color_manual]{ggplot2::scale_color_manual()}}.
+
+To set the discrete color palette globally, use:\preformatted{options(acid.color.discrete = ggplot2::scale_color_viridis_d())
+}}
+
 \item{compress}{\code{logical(1)} or \code{character(1)}.
 These character strings are currently allowed for \code{\link[base:save]{save()}}:
 \code{"gzip"}, \code{"bzip2"}, or \code{"xz"}.}
@@ -71,8 +85,23 @@ These character strings are currently allowed for \code{\link[base:save]{save()}
 \item{counts}{\code{matrix}.
 Count matrix. Normalized counts are recommended.}
 
+\item{countsAxisLabel}{\code{character(1)}.
+Counts axis label.}
+
+\item{dark}{\code{logical(1)}.
+Plot against a dark background using the
+\code{\link[acidplots:acid_theme_light]{acid_theme_light()}} ggplot2 theme.}
+
+\item{dims}{\code{integer}.
+Vector of length 2 that denotes the columns from the reduced dimension
+matrix to use for \code{centerX} and \code{centerY} column calculations. Defaults the
+first and second dimensions.}
+
 \item{dir}{\code{character(1)}.
 Directory path.}
+
+\item{direction}{\code{character(1)}.
+Plot "\code{both}", "\code{up}", or "\code{down}" directions.}
 
 \item{ensemblRelease, release}{\code{integer(1)}.
 Ensembl release version (e.g. \code{90}). We recommend setting this value if
@@ -89,10 +118,21 @@ Calculation to apply.
 Uses \code{\link[base:match.arg]{match.arg()}} internally and defaults to the first
 argument in the \code{character} vector.}
 
+\item{FUN}{\code{function}.}
+
 \item{file}{\code{character(1)}.
 File path.}
 
-\item{FUN}{\code{function}.}
+\item{fill}{\code{ggproto}/\code{ScaleDiscrete}.
+Desired ggplot2 fill scale. Must supply discrete values. When set to
+\code{NULL}, the default ggplot2 color palette will be used. If manual color
+definitions are desired, we recommend using \code{\link[ggplot2:scale_fill_manual]{ggplot2::scale_fill_manual()}}.
+
+To set the discrete fill palette globally, use:\preformatted{options(acid.fill.discrete = ggplot2::scale_fill_viridis_d())
+}}
+
+\item{flip}{\code{logical(1)}.
+Flip x and y axes. Recommended for plots containing many samples.}
 
 \item{fun}{\code{function}.}
 
@@ -101,9 +141,7 @@ Gene-to-symbol mappings. Must contain \code{geneID} and \code{geneName} columns.
 \code{Gene2Symbol} for more information.}
 
 \item{genes}{\code{character}.
-Gene identifiers. It is considered better practice to input the stable gene
-identifiers from Ensembl (e.g. "ENSG00000000003") and not the (HGNC) gene
-symbols (e.g. "TSPN6"), if possible.}
+Gene identifiers.}
 
 \item{genomeBuild}{\code{character(1)}.
 Ensembl genome build assembly name (e.g. \code{"GRCh38"}). If set \code{NULL},
@@ -111,8 +149,12 @@ defaults to the most recent build available.
 Note: don't pass in UCSC build IDs (e.g. \code{"hg38"}).}
 
 \item{gffFile}{\code{character(1)}.
-GFF/GTF (General Feature Format) file. Generally, we recommend using a GTF
-(GFFv2) instead of a GFFv3 file if possible.}
+GFF/GTF (General Feature Format) file.
+Generally, we recommend using GTF (GFFv2) instead of GFFv3.}
+
+\item{geom}{\code{character(1)}.
+Plot type. Uses \code{\link[base:match.arg]{match.arg()}} internally and defaults to
+the first argument in the \code{character} vector.}
 
 \item{headerLevel}{\code{integer(1)} (\code{1}-\code{7}).
 Markdown header level.}
@@ -127,20 +169,44 @@ For more information:\preformatted{help(topic = "Extract", package = "base")
 Should the enclosing frames of the \code{environment} be searched?}
 
 \item{interestingGroups}{\code{character}.
-Groups of interest that define the samples. If left unset, defaults to
-\code{sampleName}.}
+Groups of interest to use for visualization.
+Corresponds to factors describing the columns of the object.}
+
+\item{label}{\code{logical(1)}.
+Superimpose sample text labels on the plot.}
+
+\item{labelSize}{\code{integer(1)}.
+Size of the text label.}
+
+\item{labs}{\code{list}.
+ggplot2 labels. See \code{\link[ggplot2:labs]{ggplot2::labs()}} for details.}
 
 \item{level}{\code{character(1)}.
 Return as genes or transcripts.}
 
+\item{legend}{\code{logical(1)}.
+Include plot legend.}
+
+\item{limit}{\code{numeric(1)}.
+Threshold limit.}
+
 \item{lower}{\code{numeric(1)}.
 Lower boundary.}
+
+\item{max}{\code{numeric(1)}.
+Recommended maximum value cutoff.}
 
 \item{metadata}{\code{list}.
 Metadata.}
 
 \item{metric}{\code{character(1)}.
 Metric type, either \code{length} or \code{elements}.}
+
+\item{min}{\code{numeric(1)}.
+Recommended minimum value cutoff.}
+
+\item{minCounts}{\code{integer(1)}.
+Minimum number of counts per feature (i.e. gene).}
 
 \item{msg}{\code{NULL} or \code{character(1)}.
 Custom message to return.}
@@ -149,7 +215,7 @@ Custom message to return.}
 Number to include.}
 
 \item{ntop}{\code{integer(1)}.
-Number of top genes to label.}
+Number of top features to label.}
 
 \item{nullOK}{\code{logical(1)}.
 If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
@@ -164,6 +230,28 @@ Overwrite existing file on disk.}
 
 \item{pattern}{\code{character(1)}.
 Pattern to use for matching.}
+
+\item{perMillion}{\code{logical(1)}.
+Display as counts per million.}
+
+\item{perSample}{\code{logical(1)}.
+Visualize the distributions per sample.}
+
+\item{pointAlpha}{\code{numeric(1)} (\code{0}-\code{1}).
+Alpha transparency level. Useful when there many points in the dataset
+(e.g. single-cell data), and some points can be masked.}
+
+\item{pointColor}{\code{character(1)}.
+Default point color for the plot.}
+
+\item{pointScalar}{\code{integer(1)}.
+Default point size for the plot.}
+
+\item{pointsAsNumbers}{\code{logical(1)}.
+Plot the points as numbers (\code{TRUE}) or dots (\code{FALSE}).}
+
+\item{pointSize}{\code{numeric(1)}.
+Point size for dots in the plot.}
 
 \item{prefilter}{\code{logical(1)}.
 Apply prefiltering. Remove zero count genes.}
@@ -212,6 +300,9 @@ Resort using \code{sort}.}
 \item{spikeNames}{\code{character}.
 Vector indicating which assay rows denote spike-in sequences (e.g. ERCCs).}
 
+\item{subtitle}{\code{character(1)}.
+Subtitle.}
+
 \item{tabset}{\code{logical(1)}.
 Include tabset marker.}
 
@@ -226,8 +317,17 @@ Include traceback in error message.
 See \code{\link[base:traceback]{traceback()}} for details.
 \code{rlang::entrace()} also works nicely and can be set in \code{.Rprofile}.}
 
+\item{trans}{\code{character(1)}.
+Name of the axis scale transformation to apply.
+
+For more information:\preformatted{help(topic = "scale_x_continuous", package = "ggplot2")
+}}
+
 \item{transgeneNames}{\code{character}.
 Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).}
+
+\item{trendline}{\code{logical(1)}.
+Include trendline on plot.}
 
 \item{tx2gene}{\code{Tx2Gene}.
 Transcript-to-gene mappings.}
