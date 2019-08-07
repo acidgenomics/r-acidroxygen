@@ -13,7 +13,7 @@
 #'   - [bpparam][BiocParallel::bpparam].
 #'   - [SerialParam][BiocParallel::SerialParam].
 #'   - [MulticoreParam][BiocParallel::MulticoreParam].
-#' @param alpha `numeric(1)`.
+#' @param alpha `numeric(1)` or `NULL`.
 #'   Adjusted P value ("alpha") cutoff. If left `NULL`, will use the cutoff
 #'   defined in the object.
 #' @param asis `logical(1)`.
@@ -142,6 +142,9 @@
 #'   Size of the text label.
 #' @param labs `list`.
 #'   ggplot2 labels. See [ggplot2::labs()] for details.
+#' @param lfcThreshold `numeric(1)` or `NULL`.
+#'   Log fold change ratio (base 2) cutoff threshold. If left `NULL`, will use
+#'   the cutoff defined in the object.
 #' @param level `character(1)`.
 #'   Return as genes or transcripts.
 #' @param legend `logical(1)`.
@@ -180,16 +183,16 @@
 #' @param perSample `logical(1)`.
 #'   Visualize the distributions per sample.
 #' @param pointAlpha `numeric(1)` (`0`-`1`).
-#'   Alpha transparency level. Useful when there many points in the dataset
-#'   (e.g. single-cell data), and some points can be masked.
+#'   Alpha transparency level.
 #' @param pointColor `character(1)`.
 #'   Default point color for the plot.
 #' @param pointScalar `integer(1)`.
 #'   Default point size for the plot.
-#' @param pointsAsNumbers `logical(1)`.
-#'   Plot the points as numbers (`TRUE`) or dots (`FALSE`).
 #' @param pointSize `numeric(1)`.
 #'   Point size for dots in the plot.
+#'   In the range of 1-3 is generally recommended.
+#' @param pointsAsNumbers `logical(1)`.
+#'   Plot the points as numbers (`TRUE`) or dots (`FALSE`).
 #' @param prefilter `logical(1)`.
 #'   Apply prefiltering. Remove zero count genes.
 #' @param progress `logical(1)`.
@@ -219,6 +222,10 @@
 #'   columns.
 #' @param samples `character`.
 #'   Sample identifiers.
+#' @param sigPointColor `character`.
+#'   Color names for labeling upregulated and downregulated genes. Also supports
+#'   a character string for labeling DEGs with the same color, regardless of
+#'   direction.
 #' @param sort `logical(1)`.
 #'   Resort using `sort`.
 #' @param spikeNames `character`.

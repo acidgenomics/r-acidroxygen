@@ -19,7 +19,7 @@ We recommend using one of the following:
 \item \link[BiocParallel:MulticoreParam]{MulticoreParam}.
 }}
 
-\item{alpha}{\code{numeric(1)}.
+\item{alpha}{\code{numeric(1)} or \code{NULL}.
 Adjusted P value ("alpha") cutoff. If left \code{NULL}, will use the cutoff
 defined in the object.}
 
@@ -181,6 +181,10 @@ Size of the text label.}
 \item{labs}{\code{list}.
 ggplot2 labels. See \code{\link[ggplot2:labs]{ggplot2::labs()}} for details.}
 
+\item{lfcThreshold}{\code{numeric(1)} or \code{NULL}.
+Log fold change ratio (base 2) cutoff threshold. If left \code{NULL}, will use
+the cutoff defined in the object.}
+
 \item{level}{\code{character(1)}.
 Return as genes or transcripts.}
 
@@ -238,8 +242,7 @@ Display as counts per million.}
 Visualize the distributions per sample.}
 
 \item{pointAlpha}{\code{numeric(1)} (\code{0}-\code{1}).
-Alpha transparency level. Useful when there many points in the dataset
-(e.g. single-cell data), and some points can be masked.}
+Alpha transparency level.}
 
 \item{pointColor}{\code{character(1)}.
 Default point color for the plot.}
@@ -247,11 +250,12 @@ Default point color for the plot.}
 \item{pointScalar}{\code{integer(1)}.
 Default point size for the plot.}
 
+\item{pointSize}{\code{numeric(1)}.
+Point size for dots in the plot.
+In the range of 1-3 is generally recommended.}
+
 \item{pointsAsNumbers}{\code{logical(1)}.
 Plot the points as numbers (\code{TRUE}) or dots (\code{FALSE}).}
-
-\item{pointSize}{\code{numeric(1)}.
-Point size for dots in the plot.}
 
 \item{prefilter}{\code{logical(1)}.
 Apply prefiltering. Remove zero count genes.}
@@ -293,6 +297,11 @@ columns.}
 
 \item{samples}{\code{character}.
 Sample identifiers.}
+
+\item{sigPointColor}{\code{character}.
+Color names for labeling upregulated and downregulated genes. Also supports
+a character string for labeling DEGs with the same color, regardless of
+direction.}
 
 \item{sort}{\code{logical(1)}.
 Resort using \code{sort}.}
