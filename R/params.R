@@ -76,7 +76,7 @@
 #' @param dir `character(1)`.
 #'   Directory path.
 #' @param direction `character(1)`.
-#'   Plot "`both`", "`up`", or "`down`" directions.
+#'   Plot `"both"`, `"up"`, or `"down"` directions.
 #' @param ensemblRelease,release `integer(1)`.
 #'   Ensembl release version (e.g. `90`). We recommend setting this value if
 #'   possible, for improved reproducibility. When left unset, the latest release
@@ -173,7 +173,7 @@
 #'   If set to `TRUE`, `x` may also be `NULL`.
 #' @param ordered `logical(1)`.
 #' @param organism `character(1)`.
-#'   Full Latin organism name (e.g. "`Homo sapiens`").
+#'   Full Latin organism name (e.g. `"Homo sapiens"`).
 #' @param overwrite `logical(1)`.
 #'   Overwrite existing file on disk.
 #' @param pattern `character(1)`.
