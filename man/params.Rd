@@ -101,7 +101,7 @@ first and second dimensions.}
 Directory path.}
 
 \item{direction}{\code{character(1)}.
-Plot "\code{both}", "\code{up}", or "\code{down}" directions.}
+Plot \code{"both"}, \code{"up"}, or \code{"down"} directions.}
 
 \item{ensemblRelease, release}{\code{integer(1)}.
 Ensembl release version (e.g. \code{90}). We recommend setting this value if
@@ -227,7 +227,7 @@ If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
 \item{ordered}{\code{logical(1)}.}
 
 \item{organism}{\code{character(1)}.
-Full Latin organism name (e.g. "\code{Homo sapiens}").}
+Full Latin organism name (e.g. \code{"Homo sapiens"}).}
 
 \item{overwrite}{\code{logical(1)}.
 Overwrite existing file on disk.}
