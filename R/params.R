@@ -131,6 +131,9 @@
 #'   ```
 #'   help(topic = "Extract", package = "base")
 #'   ```
+#' @param ignoreTxVersion `logical(1)`. Don't the include the transcript version
+#'   in the identifier. Only applies when `level = "transcripts"`. This
+#'   simplifies identifier matching when generating a `tx2gene` file.
 #' @param inherits `logical(1)`.
 #'   Should the enclosing frames of the `environment` be searched?
 #' @param interestingGroups `character`.
