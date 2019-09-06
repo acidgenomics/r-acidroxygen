@@ -165,6 +165,10 @@ Markdown header level.}
 For more information:\preformatted{help(topic = "Extract", package = "base")
 }}
 
+\item{ignoreTxVersion}{\code{logical(1)}. Don't the include the transcript version
+in the identifier. Only applies when \code{level = "transcripts"}. This
+simplifies identifier matching when generating a \code{tx2gene} file.}
+
 \item{inherits}{\code{logical(1)}.
 Should the enclosing frames of the \code{environment} be searched?}
 
