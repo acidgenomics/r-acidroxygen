@@ -143,8 +143,9 @@
 #'   Superimpose sample text labels on the plot.
 #' @param labelSize `integer(1)`.
 #'   Size of the text label.
-#' @param labs `list`.
-#'   ggplot2 labels. See [ggplot2::labs()] for details.
+#' @param labels `list`.
+#'   ggplot2 labels.
+#'   See [ggplot2::labs()] for details.
 #' @param lfcThreshold `numeric(1)` or `NULL`.
 #'   Log fold change ratio (base 2) cutoff threshold. If left `NULL`, will use
 #'   the cutoff defined in the object.
