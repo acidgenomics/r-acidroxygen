@@ -182,8 +182,9 @@ Superimpose sample text labels on the plot.}
 \item{labelSize}{\code{integer(1)}.
 Size of the text label.}
 
-\item{labs}{\code{list}.
-ggplot2 labels. See \code{\link[ggplot2:labs]{ggplot2::labs()}} for details.}
+\item{labels}{\code{list}.
+ggplot2 labels.
+See \code{\link[ggplot2:labs]{ggplot2::labs()}} for details.}
 
 \item{lfcThreshold}{\code{numeric(1)} or \code{NULL}.
 Log fold change ratio (base 2) cutoff threshold. If left \code{NULL}, will use
