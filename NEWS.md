@@ -1,3 +1,7 @@
+## acidroxygen 0.1.3 (2019-09-16)
+
+- Added support for `labels` param.
+
 ## acidroxygen 0.1.2 (2019-09-05)
 
 - Added `ignoreTxVersion` param.
