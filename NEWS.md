@@ -1,3 +1,8 @@
+## acidroxygen 0.1.4 (2019-11-12)
+
+- Updated DESCRIPTION and defunct, deprecated Rd files to reflect changes in
+  new roxygen2 7.0 update.
+
 ## acidroxygen 0.1.3 (2019-09-16)
 
 - Added support for `labels` param.
