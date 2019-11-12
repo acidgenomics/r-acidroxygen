@@ -1,12 +1,10 @@
 # acidroxygen
 
-Shared documentation files for R packages.
-
-This package is part of the [basejump][] toolkit.
+Shared documentation files for [Acid Genomics][] R packages.
 
 ## Installation
 
-### [R][] method
+This is an [R][] package.
 
 ```r
 if (!requireNamespace("remotes", quietly = TRUE)) {
@@ -17,5 +15,5 @@ Sys.setenv(R_REMOTES_UPGRADE = "always")
 remotes::install_github("acidgenomics/acidroxygen")
 ```
 
-[R]: https://www.r-project.org/
-[basejump]: https://basejump.acidgenomics.com/
+[acid genomics]: https://acidgenomics.com/
+[r]: https://www.r-project.org/

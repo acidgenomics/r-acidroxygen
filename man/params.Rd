@@ -118,7 +118,7 @@ Calculation to apply.
 Uses \code{\link[base:match.arg]{match.arg()}} internally and defaults to the first
 argument in the \code{character} vector.}
 
-\item{FUN}{\code{function}.}
+\item{FUN}{\verb{function}.}
 
 \item{file}{\code{character(1)}.
 File path.}
@@ -134,7 +134,7 @@ To set the discrete fill palette globally, use:\preformatted{options(acid.fill.d
 \item{flip}{\code{logical(1)}.
 Flip x and y axes. Recommended for plots containing many samples.}
 
-\item{fun}{\code{function}.}
+\item{fun}{\verb{function}.}
 
 \item{gene2symbol}{\code{Gene2Symbol}.
 Gene-to-symbol mappings. Must contain \code{geneID} and \code{geneName} columns. See
