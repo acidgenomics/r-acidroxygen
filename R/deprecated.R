@@ -1,7 +1,6 @@
 #' Deprecated functions
 #'
 #' @name deprecated
-#' @inheritParams params
 #' @seealso [Deprecated][base::Deprecated].
 #' @return `.Deprecated`.
 #'
