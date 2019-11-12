@@ -1,7 +1,6 @@
 #' Defunct functions
 #'
 #' @name defunct
-#' @inheritParams params
 #' @seealso [Defunct][base::Defunct].
 #' @return `.Defunct`.
 #'
