@@ -139,6 +139,15 @@
 #' @param interestingGroups `character`.
 #'   Groups of interest to use for visualization.
 #'   Corresponds to factors describing the columns of the object.
+#' @param j
+#'   Indices specifying elements to extract or replace. Indices are `numeric` or
+#'   `character` vectors, empty (`missing`), or `NULL`.
+#'
+#'   For more information:
+#'
+#'   ```
+#'   help(topic = "Extract", package = "base")
+#'   ```
 #' @param label `logical(1)`.
 #'   Superimpose sample text labels on the plot.
 #' @param labelSize `integer(1)`.

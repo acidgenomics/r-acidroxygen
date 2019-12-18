@@ -1,3 +1,7 @@
+## acidroxygen 0.1.5 (2019-12-18)
+
+- Added documentation for `j`, following the same convention as `i`.
+
 ## acidroxygen 0.1.4 (2019-11-12)
 
 - Updated DESCRIPTION and defunct, deprecated Rd files to reflect changes in

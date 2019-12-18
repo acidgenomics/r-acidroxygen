@@ -2,8 +2,8 @@ Package: acidroxygen
 Title: Shared Documentation Files for R Packages
 Description: Generate your Rd documentation using shared snippets. Particularly
     useful for improving consistency of param and return arguments.
-Version: 0.1.4
-Date: 2019-11-12
+Version: 0.1.5
+Date: 2019-12-18
 Authors@R: c(
     person(
         "Michael", "Steinbaugh",
@@ -25,4 +25,4 @@ Depends: R (>= 3.6)
 Suggests: roxygen2 (>= 7.0)
 biocViews: Infrastructure
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.0
+RoxygenNote: 7.0.2
