@@ -118,7 +118,7 @@ Calculation to apply.
 Uses \code{\link[base:match.arg]{match.arg()}} internally and defaults to the first
 argument in the \code{character} vector.}
 
-\item{FUN}{\verb{function}.}
+\item{FUN}{\code{function}.}
 
 \item{file}{\code{character(1)}.
 File path.}
@@ -134,7 +134,7 @@ To set the discrete fill palette globally, use:\preformatted{options(acid.fill.d
 \item{flip}{\code{logical(1)}.
 Flip x and y axes. Recommended for plots containing many samples.}
 
-\item{fun}{\verb{function}.}
+\item{fun}{\code{function}.}
 
 \item{gene2symbol}{\code{Gene2Symbol}.
 Gene-to-symbol mappings. Must contain \code{geneID} and \code{geneName} columns. See
@@ -175,6 +175,12 @@ Should the enclosing frames of the \code{environment} be searched?}
 \item{interestingGroups}{\code{character}.
 Groups of interest to use for visualization.
 Corresponds to factors describing the columns of the object.}
+
+\item{j}{Indices specifying elements to extract or replace. Indices are \code{numeric} or
+\code{character} vectors, empty (\code{missing}), or \code{NULL}.
+
+For more information:\preformatted{help(topic = "Extract", package = "base")
+}}
 
 \item{label}{\code{logical(1)}.
 Superimpose sample text labels on the plot.}
