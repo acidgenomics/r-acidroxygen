@@ -1,3 +1,7 @@
+## acidroxygen 0.1.6 (2020-01-17)
+
+- Added `quiet` param documentation.
+
 ## acidroxygen 0.1.5 (2019-12-18)
 
 - Added documentation for `j`, following the same convention as `i`.
