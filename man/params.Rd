@@ -277,6 +277,9 @@ Show progress, using progress bars.}
 \item{projectDir}{\code{character(1)}.
 Project directory path.}
 
+\item{quiet}{\code{logical(1)}.
+Perform command quietly, suppressing messages.}
+
 \item{reducedDims}{\code{SimpleList}.
 List containing matrices of cell coordinates in reduced space.}
 

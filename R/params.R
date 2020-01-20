@@ -212,6 +212,8 @@
 #'   Show progress, using progress bars.
 #' @param projectDir `character(1)`.
 #'   Project directory path.
+#' @param quiet `logical(1)`.
+#'   Perform command quietly, suppressing messages.
 #' @param reducedDims `SimpleList`.
 #'   List containing matrices of cell coordinates in reduced space.
 #' @param reduction `vector(1)`.
