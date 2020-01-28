@@ -19,7 +19,7 @@ URL:
     https://acidroxygen.acidgenomics.com/,
     https://github.com/acidgenomics/acidroxygen/
 BugReports: https://github.com/acidgenomics/acidroxygen/issues/
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 3.6)
 Suggests: roxygen2 (>= 7.0)
