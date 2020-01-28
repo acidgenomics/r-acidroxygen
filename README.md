@@ -1,6 +1,6 @@
 # acidroxygen
 
-Shared documentation files for [Acid Genomics][] R packages.
+Shared roxygen2 documentation for [Acid Genomics][] packages.
 
 ## Installation
 
