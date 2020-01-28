@@ -1,7 +1,7 @@
 Package: acidroxygen
 Title: Acid Genomics Documentation
 Description: Shared roxygen2 documentation for Acid Genomics packages.
-Version: 0.1.7
+Version: 0.1.8
 Date: 2020-01-28
 Authors@R: c(
     person(
@@ -18,7 +18,7 @@ URL:
     https://acidroxygen.acidgenomics.com/,
     https://github.com/acidgenomics/acidroxygen/
 BugReports: https://github.com/acidgenomics/acidroxygen/issues/
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 3.6)
 Suggests: roxygen2 (>= 7.0)
