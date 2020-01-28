@@ -1,3 +1,7 @@
+## acidroxygen 0.1.7 (2020-01-28)
+
+- Documentation fixes to pass CRAN release checks.
+
 ## acidroxygen 0.1.6 (2020-01-17)
 
 - Added `quiet` param documentation.

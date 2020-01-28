@@ -67,8 +67,8 @@
 #' @param countsAxisLabel `character(1)`.
 #'   Counts axis label.
 #' @param dark `logical(1)`.
-#'   Plot against a dark background using the
-#'   [`acid_theme_light()`][acidplots::acid_theme_light] ggplot2 theme.
+#'   Plot against a dark background using the `acid_theme_light()` ggplot2
+#'   theme.
 #' @param dims `integer`.
 #'   Vector of length 2 that denotes the columns from the reduced dimension
 #'   matrix to use for `centerX` and `centerY` column calculations. Defaults the
