@@ -1,3 +1,7 @@
+## acidroxygen 0.1.8 (2020-01-28)
+
+- Switched license from MIT to GPL-3.
+
 ## acidroxygen 0.1.7 (2020-01-28)
 
 - Documentation fixes to pass CRAN release checks.
