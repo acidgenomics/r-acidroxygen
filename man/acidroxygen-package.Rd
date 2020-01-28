@@ -6,7 +6,7 @@
 \alias{acidroxygen-package}
 \title{acidroxygen}
 \description{
-Shared documentation files for R packages.
+Shared roxygen2 documentation for Acid Genomics packages.
 }
 \seealso{
 Useful links:

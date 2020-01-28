@@ -1,4 +1,4 @@
 #' acidroxygen
 #'
-#' Shared documentation files for R packages.
+#' Shared roxygen2 documentation for Acid Genomics packages.
 "_PACKAGE"

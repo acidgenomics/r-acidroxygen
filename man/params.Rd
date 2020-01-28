@@ -89,8 +89,8 @@ Count matrix. Normalized counts are recommended.}
 Counts axis label.}
 
 \item{dark}{\code{logical(1)}.
-Plot against a dark background using the
-\code{\link[acidplots:acid_theme_light]{acid_theme_light()}} ggplot2 theme.}
+Plot against a dark background using the \code{acid_theme_light()} ggplot2
+theme.}
 
 \item{dims}{\code{integer}.
 Vector of length 2 that denotes the columns from the reduced dimension
