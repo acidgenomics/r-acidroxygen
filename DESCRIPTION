@@ -23,6 +23,5 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 3.6)
 Suggests: roxygen2 (>= 7.0)
-biocViews: Infrastructure
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
