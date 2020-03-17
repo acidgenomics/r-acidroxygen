@@ -76,7 +76,7 @@
 #' @param dir `character(1)`.
 #'   Directory path.
 #' @param direction `character(1)`.
-#'   Plot `"both"`, `"up"`, or `"down"` directions.
+#'   Include `"both"`, `"up"`, or `"down"` directions.
 #' @param ensemblRelease,release `integer(1)`.
 #'   Ensembl release version (e.g. `90`). We recommend setting this value if
 #'   possible, for improved reproducibility. When left unset, the latest release

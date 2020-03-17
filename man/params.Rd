@@ -101,7 +101,7 @@ first and second dimensions.}
 Directory path.}
 
 \item{direction}{\code{character(1)}.
-Plot \code{"both"}, \code{"up"}, or \code{"down"} directions.}
+Include \code{"both"}, \code{"up"}, or \code{"down"} directions.}
 
 \item{ensemblRelease, release}{\code{integer(1)}.
 Ensembl release version (e.g. \code{90}). We recommend setting this value if
