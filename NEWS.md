@@ -1,3 +1,7 @@
+## acidroxygen 0.1.9 (2020-03-17)
+
+- Updated "direction" param to not assume usage inside a plotting function.
+
 ## acidroxygen 0.1.8 (2020-01-28)
 
 - Switched license from MIT to GPL-3.
