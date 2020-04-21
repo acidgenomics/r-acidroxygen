@@ -82,6 +82,10 @@ To set the discrete color palette globally, use:\preformatted{options(acid.color
 These character strings are currently allowed for \code{\link[base:save]{save()}}:
 \code{"gzip"}, \code{"bzip2"}, or \code{"xz"}.}
 
+\item{convertGenesToSymbols}{\code{logical(1)}.
+Attempt to automatically convert gene identifiers to gene symbols.
+Only applies when object contains mappings defined in \code{rowRanges}.}
+
 \item{counts}{\code{matrix}.
 Count matrix. Normalized counts are recommended.}
 

@@ -1,3 +1,7 @@
+## acidroxygen 0.1.10 (2020-04-21)
+
+- Added `convertToSymbols` documentation.
+
 ## acidroxygen 0.1.9 (2020-03-17)
 
 - Updated "direction" param to not assume usage inside a plotting function.
