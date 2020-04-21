@@ -62,6 +62,9 @@
 #' @param compress `logical(1)` or `character(1)`.
 #'   These character strings are currently allowed for [`save()`][base::save]:
 #'   `"gzip"`, `"bzip2"`, or `"xz"`.
+#' @param convertGenesToSymbols `logical(1)`.
+#'   Attempt to automatically convert gene identifiers to gene symbols.
+#'   Only applies when object contains mappings defined in `rowRanges`.
 #' @param counts `matrix`.
 #'   Count matrix. Normalized counts are recommended.
 #' @param countsAxisLabel `character(1)`.
