@@ -14,9 +14,9 @@
 BiocParallel parameter to specify the desired processor configuration.\cr
 We recommend using one of the following:
 \itemize{
-\item \link[BiocParallel:bpparam]{bpparam}.
-\item \link[BiocParallel:SerialParam]{SerialParam}.
-\item \link[BiocParallel:MulticoreParam]{MulticoreParam}.
+\item \link[BiocParallel:register]{bpparam}.
+\item \link[BiocParallel:SerialParam-class]{SerialParam}.
+\item \link[BiocParallel:MulticoreParam-class]{MulticoreParam}.
 }}
 
 \item{alpha}{\code{numeric(1)} or \code{NULL}.
@@ -73,7 +73,7 @@ Apply to column names.}
 \item{color}{\code{ScaleDiscrete}.
 Desired ggplot2 color scale. Must supply discrete values. When set \code{NULL},
 the default ggplot2 color palette will be used. If manual color definitions
-are desired, we recommend using \code{\link[ggplot2:scale_color_manual]{ggplot2::scale_color_manual()}}.
+are desired, we recommend using \code{\link[ggplot2:scale_manual]{ggplot2::scale_color_manual()}}.
 
 To set the discrete color palette globally, use:\preformatted{options(acid.color.discrete = ggplot2::scale_color_viridis_d())
 }}
@@ -130,7 +130,7 @@ File path.}
 \item{fill}{\code{ggproto}/\code{ScaleDiscrete}.
 Desired ggplot2 fill scale. Must supply discrete values. When set to
 \code{NULL}, the default ggplot2 color palette will be used. If manual color
-definitions are desired, we recommend using \code{\link[ggplot2:scale_fill_manual]{ggplot2::scale_fill_manual()}}.
+definitions are desired, we recommend using \code{\link[ggplot2:scale_manual]{ggplot2::scale_fill_manual()}}.
 
 To set the discrete fill palette globally, use:\preformatted{options(acid.fill.discrete = ggplot2::scale_fill_viridis_d())
 }}
