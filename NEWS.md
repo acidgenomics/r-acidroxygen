@@ -1,3 +1,7 @@
+## acidroxygen 0.1.11 (2020-07-07)
+
+- Updated for roxygen 7.1.1.
+
 ## acidroxygen 0.1.10 (2020-04-21)
 
 - Added `convertToSymbols` documentation.
