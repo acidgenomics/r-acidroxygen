@@ -98,7 +98,7 @@
 #' @param fill `ggproto`/`ScaleDiscrete`.
 #'   Desired ggplot2 fill scale. Must supply discrete values. When set to
 #'   `NULL`, the default ggplot2 color palette will be used. If manual color
-#'   definitions are desired, we recommend using [ggplot2::scale_fill_manual()].
+#'   definitions are desired, we recommend using `ggplot2::scale_fill_manual()`.
 #'
 #'   To set the discrete fill palette globally, use:
 #'
