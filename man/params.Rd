@@ -40,6 +40,11 @@ in as either a dense matrix (\code{matrix}) or sparse matrix (\code{sparseMatrix
 \item{base}{\code{integer(1)}.
 Logarithm base.}
 
+\item{baseMeanThreshold}{\code{numeric(1)} or \code{NULL}.
+Base mean (i.e. average expression across all samples) threshold.
+If left \code{NULL}, will use the cutoff defined in the object.
+Applies in general to DESeq2 RNA-seq differential expression output.}
+
 \item{borderColor}{\code{character(1)} or \code{NULL}.
 Border color.}
 
@@ -197,8 +202,8 @@ ggplot2 labels.
 See \code{\link[ggplot2:labs]{ggplot2::labs()}} for details.}
 
 \item{lfcThreshold}{\code{numeric(1)} or \code{NULL}.
-Log fold change ratio (base 2) cutoff threshold. If left \code{NULL}, will use
-the cutoff defined in the object.}
+Log (base 2) fold change ratio cutoff threshold.
+If left \code{NULL}, will use the cutoff defined in the object.}
 
 \item{level}{\code{character(1)}.
 Return as genes or transcripts.}

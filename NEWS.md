@@ -1,3 +1,7 @@
+## acidroxygen 0.1.13 (2020-07-22)
+
+- Added `baseMeanThreshold` param.
+
 ## acidroxygen 0.1.12 (2020-07-22)
 
 - ggplot2 documentation link fix.
