@@ -1,3 +1,7 @@
+## acidroxygen 0.1.12 (2020-07-22)
+
+- ggplot2 documentation link fix.
+
 ## acidroxygen 0.1.11 (2020-07-07)
 
 - Updated for roxygen 7.1.1.

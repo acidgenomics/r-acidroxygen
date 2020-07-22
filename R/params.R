@@ -52,7 +52,7 @@
 #' @param color `ScaleDiscrete`.
 #'   Desired ggplot2 color scale. Must supply discrete values. When set `NULL`,
 #'   the default ggplot2 color palette will be used. If manual color definitions
-#'   are desired, we recommend using [ggplot2::scale_color_manual()].
+#'   are desired, we recommend using `ggplot2::scale_color_manual()`.
 #'
 #'   To set the discrete color palette globally, use:
 #'
