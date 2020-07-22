@@ -28,6 +28,10 @@
 #'   in as either a dense matrix (`matrix`) or sparse matrix (`sparseMatrix`).
 #' @param base `integer(1)`.
 #'   Logarithm base.
+#' @param baseMeanThreshold `numeric(1)` or `NULL`.
+#'   Base mean (i.e. average expression across all samples) threshold.
+#'   If left `NULL`, will use the cutoff defined in the object.
+#'   Applies in general to DESeq2 RNA-seq differential expression output.
 #' @param borderColor `character(1)` or `NULL`.
 #'   Border color.
 #' @param captions `character` or `NULL`.
@@ -159,8 +163,8 @@
 #'   ggplot2 labels.
 #'   See [ggplot2::labs()] for details.
 #' @param lfcThreshold `numeric(1)` or `NULL`.
-#'   Log fold change ratio (base 2) cutoff threshold. If left `NULL`, will use
-#'   the cutoff defined in the object.
+#'   Log (base 2) fold change ratio cutoff threshold.
+#'   If left `NULL`, will use the cutoff defined in the object.
 #' @param level `character(1)`.
 #'   Return as genes or transcripts.
 #' @param legend `logical(1)`.
