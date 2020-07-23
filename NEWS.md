@@ -1,10 +1,7 @@
-## acidroxygen 0.1.14 (2020-07-23)
-
-- Maintenance release, updating R dependency to 4.0.
-
-## acidroxygen 0.1.13 (2020-07-22)
+## acidroxygen 0.1.13 (2020-07-23)
 
 - Added `baseMeanThreshold` param.
+- Maintenance release, updating R dependency to 4.0.
 
 ## acidroxygen 0.1.12 (2020-07-22)
 

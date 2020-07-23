@@ -1,7 +1,7 @@
 Package: acidroxygen
 Title: Acid Genomics Documentation
 Description: Shared roxygen2 documentation for Acid Genomics packages.
-Version: 0.1.14
+Version: 0.1.13
 Date: 2020-07-23
 Authors@R: c(
     person(
