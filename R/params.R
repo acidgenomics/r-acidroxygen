@@ -13,7 +13,7 @@
 #'   - [bpparam][BiocParallel::bpparam].
 #'   - [SerialParam][BiocParallel::SerialParam].
 #'   - [MulticoreParam][BiocParallel::MulticoreParam].
-#' @param alpha `numeric(1)` or `NULL`.
+#' @param alphaThreshold `numeric(1)` or `NULL`.
 #'   Adjusted P value ("alpha") cutoff. If left `NULL`, will use the cutoff
 #'   defined in the object.
 #' @param asis `logical(1)`.
