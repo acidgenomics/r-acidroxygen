@@ -7,12 +7,10 @@ Shared roxygen2 documentation for [Acid Genomics][] packages.
 This is an [R][] package.
 
 ```r
-if (!requireNamespace("remotes", quietly = TRUE)) {
-    install.packages("remotes")
-}
-Sys.setenv(R_REMOTES_UPGRADE = "always")
-# Set `GITHUB_PAT` in `~/.Renviron` if you get a rate limit error.
-remotes::install_github("acidgenomics/acidroxygen")
+install.packages(
+    pkgs = "acidroxygen",
+    repos = c("r.acidgenomics.com", getOption("repos"))
+)
 ```
 
 [acid genomics]: https://acidgenomics.com/
