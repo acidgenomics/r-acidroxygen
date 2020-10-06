@@ -1,3 +1,7 @@
+## AcidRoxygen 0.2.0 (2020-10-06)
+
+- Renamed package from acidroxygen to AcidRoxygen.
+
 ## acidroxygen 0.1.13 (2020-07-23)
 
 - Added `baseMeanThreshold` param.
