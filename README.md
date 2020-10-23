@@ -1,4 +1,4 @@
-# acidroxygen
+# AcidRoxygen
 
 Shared [roxygen2][] documentation for [Acid Genomics][] packages.
 
@@ -9,7 +9,10 @@ This is an [R][] package.
 ```r
 install.packages(
     pkgs = "AcidRoxygen",
-    repos = c("r.acidgenomics.com", getOption("repos"))
+    repos = c(
+        "https://r.acidgenomics.com",
+        getOption("repos")
+    )
 )
 ```
 
