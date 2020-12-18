@@ -19,7 +19,7 @@ We recommend using one of the following:
 \item \link[BiocParallel:MulticoreParam-class]{MulticoreParam}.
 }}
 
-\item{alpha}{\code{numeric(1)} or \code{NULL}.
+\item{alphaThreshold}{\code{numeric(1)} or \code{NULL}.
 Adjusted P value ("alpha") cutoff. If left \code{NULL}, will use the cutoff
 defined in the object.}
 
