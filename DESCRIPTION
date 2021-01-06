@@ -15,9 +15,9 @@ Authors@R: c(
         role = c("cph", "fnd")
     ))
 URL:
-    https://acidroxygen.acidgenomics.com/,
-    https://github.com/acidgenomics/AcidRoxygen/
-BugReports: https://github.com/acidgenomics/AcidRoxygen/issues/
+    https://r.acidgenomics.com/packages/acidroxygen/,
+    https://github.com/acidgenomics/r-acidroxygen/
+BugReports: https://github.com/acidgenomics/r-acidroxygen/issues/
 License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 4.0)
