@@ -146,7 +146,7 @@ Flip x and y axes. Recommended for plots containing many samples.}
 \item{fun}{\code{function}.}
 
 \item{gene2symbol}{\code{Gene2Symbol}.
-Gene-to-symbol mappings. Must contain \code{geneID} and \code{geneName} columns. See
+Gene-to-symbol mappings. Must contain \code{geneId} and \code{geneName} columns. See
 \code{Gene2Symbol} for more information.}
 
 \item{genes}{\code{character}.

@@ -113,7 +113,7 @@
 #'   Flip x and y axes. Recommended for plots containing many samples.
 #' @param fun `function`.
 #' @param gene2symbol `Gene2Symbol`.
-#'   Gene-to-symbol mappings. Must contain `geneID` and `geneName` columns. See
+#'   Gene-to-symbol mappings. Must contain `geneId` and `geneName` columns. See
 #'   `Gene2Symbol` for more information.
 #' @param genes `character`.
 #'   Gene identifiers.
