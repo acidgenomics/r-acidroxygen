@@ -1,3 +1,7 @@
+## AcidRoxygen 0.2.1 (2021-01-15)
+
+- Documentation update, noting use of "geneId" instead of "geneID".
+
 ## AcidRoxygen 0.2.0 (2020-10-06)
 
 - Renamed package from acidroxygen to AcidRoxygen.
