@@ -235,6 +235,10 @@ Minimum number of counts per feature (i.e. gene).}
 \item{msg}{\code{NULL} or \code{character(1)}.
 Custom message to return.}
 
+\item{nMax}{\code{integer(1)}. or \code{Inf}.
+Maximum number (i.e. of lines) to include.
+Use \code{Inf} to not apply a limit.}
+
 \item{n}{\code{integer(1)}.
 Number to include.}
 

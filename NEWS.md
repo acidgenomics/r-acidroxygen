@@ -1,3 +1,7 @@
+## AcidRoxygen 0.2.2 (2021-01-19)
+
+- Added `nMax` documentation.
+
 ## AcidRoxygen 0.2.1 (2021-01-15)
 
 - Documentation update, noting use of "geneId" instead of "geneID".

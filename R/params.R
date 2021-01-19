@@ -185,6 +185,9 @@
 #'   Minimum number of counts per feature (i.e. gene).
 #' @param msg `NULL` or `character(1)`.
 #'   Custom message to return.
+#' @param nMax `integer(1)`. or `Inf`.
+#'   Maximum number (i.e. of lines) to include.
+#'   Use `Inf` to not apply a limit.
 #' @param n `integer(1)`.
 #'   Number to include.
 #' @param ntop `integer(1)`.
