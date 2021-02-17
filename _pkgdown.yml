@@ -12,4 +12,4 @@ navbar:
     right: [acid, github]
 news:
   - one_page: false
-url: https://r.acidgenomics.com/packages/acidroxygen/
+url: https://r.acidgenomics.com/packages/acidroxygen
