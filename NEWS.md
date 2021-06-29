@@ -1,3 +1,7 @@
+## AcidRoxygen 0.2.3 (2021-06-29)
+
+- Added `MARGIN` documentation.
+
 ## AcidRoxygen 0.2.2 (2021-01-19)
 
 - Added `nMax` documentation.
