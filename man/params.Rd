@@ -19,6 +19,13 @@ We recommend using one of the following:
 \item \link[BiocParallel:MulticoreParam-class]{MulticoreParam}.
 }}
 
+\item{MARGIN}{\code{integer(1-2)}.
+Dimension where the function will be applied.
+For a two-dimensional matrix:
+\code{1} indicates rows;
+\code{2} indicates columns;
+\code{c(1, 2)} indicates rows and columns.}
+
 \item{alphaThreshold}{\code{numeric(1)} or \code{NULL}.
 Adjusted P value ("alpha") cutoff. If left \code{NULL}, will use the cutoff
 defined in the object.}

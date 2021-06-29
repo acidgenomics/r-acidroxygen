@@ -13,6 +13,13 @@
 #'   - [bpparam][BiocParallel::bpparam].
 #'   - [SerialParam][BiocParallel::SerialParam].
 #'   - [MulticoreParam][BiocParallel::MulticoreParam].
+#' @param MARGIN `integer(1-2)`.
+#'   Dimension where the function will be applied.
+#'   For a two-dimensional matrix:
+#'     `1` indicates rows;
+#'     `2` indicates columns;
+#'     `c(1, 2)` indicates rows and columns.
+#'
 #' @param alphaThreshold `numeric(1)` or `NULL`.
 #'   Adjusted P value ("alpha") cutoff. If left `NULL`, will use the cutoff
 #'   defined in the object.
