@@ -1,3 +1,7 @@
+## AcidRoxygen 0.2.4 (2021-10-28)
+
+- Updated R dependency to R 4.1, matching Bioconductor 3.14.
+
 ## AcidRoxygen 0.2.3 (2021-06-29)
 
 - Added `MARGIN` documentation.
