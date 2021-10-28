@@ -68,7 +68,7 @@
 #'   To set the discrete color palette globally, use:
 #'
 #'   ```
-#'   options(acid.color.discrete = ggplot2::scale_color_viridis_d())
+#'   options("acid.color.discrete" = ggplot2::scale_color_viridis_d())
 #'   ```
 #' @param compress `logical(1)` or `character(1)`.
 #'   These character strings are currently allowed for [`save()`][base::save]:
@@ -114,7 +114,7 @@
 #'   To set the discrete fill palette globally, use:
 #'
 #'   ```
-#'   options(acid.fill.discrete = ggplot2::scale_fill_viridis_d())
+#'   options("acid.fill.discrete" = ggplot2::scale_fill_viridis_d())
 #'   ```
 #' @param flip `logical(1)`.
 #'   Flip x and y axes. Recommended for plots containing many samples.
@@ -242,8 +242,8 @@
 #'   to the first argument in the `character` vector.
 #' @param rowData `DataFrame`.
 #'   Metadata describing the assay rows, if genomic ranges are not available.
-#'   *Use rowRanges (GRanges) instead, if possible*.
-#' @param rowRanges `GRanges` or `GRangesList`.
+#'   *Use rowRanges (GenomicRanges) instead, if possible*.
+#' @param rowRanges `GenomicRanges` or `GenomicRangesList`.
 #'   Genomic ranges (e.g. genome annotations). Metadata describing the assay
 #'   rows.
 #' @param rownames `logical(1)`.
