@@ -1,4 +1,4 @@
-# AcidRoxygen 0.2.4 (2021-10-28)
+# AcidRoxygen 0.2.4 (2022-03-11)
 
 - Updated R dependency to R 4.1, matching Bioconductor 3.14.
 
