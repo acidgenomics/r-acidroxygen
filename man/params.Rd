@@ -4,12 +4,6 @@
 \alias{params}
 \title{Shared parameter documentation}
 \arguments{
-\item{object}{Object.}
-
-\item{x}{Object.}
-
-\item{y}{Object.}
-
 \item{BPPARAM}{\code{bpparamClass}.
 BiocParallel parameter to specify the desired processor configuration.\cr
 We recommend using one of the following:
@@ -18,6 +12,8 @@ We recommend using one of the following:
 \item \link[BiocParallel:SerialParam-class]{SerialParam}.
 \item \link[BiocParallel:MulticoreParam-class]{MulticoreParam}.
 }}
+
+\item{FUN}{\code{function}.}
 
 \item{MARGIN}{\code{integer(1-2)}.
 Dimension where the function will be applied.
@@ -87,7 +83,7 @@ Desired ggplot2 color scale. Must supply discrete values. When set \code{NULL},
 the default ggplot2 color palette will be used. If manual color definitions
 are desired, we recommend using \code{ggplot2::scale_color_manual()}.
 
-To set the discrete color palette globally, use:\preformatted{options(acid.color.discrete = ggplot2::scale_color_viridis_d())
+To set the discrete color palette globally, use:\preformatted{options("acid.color.discrete" = ggplot2::scale_color_viridis_d())
 }}
 
 \item{compress}{\code{logical(1)} or \code{character(1)}.
@@ -134,8 +130,6 @@ Calculation to apply.
 Uses \code{\link[base:match.arg]{match.arg()}} internally and defaults to the first
 argument in the \code{character} vector.}
 
-\item{FUN}{\code{function}.}
-
 \item{file}{\code{character(1)}.
 File path.}
 
@@ -144,7 +138,7 @@ Desired ggplot2 fill scale. Must supply discrete values. When set to
 \code{NULL}, the default ggplot2 color palette will be used. If manual color
 definitions are desired, we recommend using \code{ggplot2::scale_fill_manual()}.
 
-To set the discrete fill palette globally, use:\preformatted{options(acid.fill.discrete = ggplot2::scale_fill_viridis_d())
+To set the discrete fill palette globally, use:\preformatted{options("acid.fill.discrete" = ggplot2::scale_fill_viridis_d())
 }}
 
 \item{flip}{\code{logical(1)}.
@@ -162,7 +156,7 @@ Gene identifiers.}
 \item{genomeBuild}{\code{character(1)}.
 Ensembl genome build assembly name (e.g. \code{"GRCh38"}). If set \code{NULL},
 defaults to the most recent build available.
-Note: don't pass in UCSC build IDs (e.g. \code{"hg38"}).}
+\emph{Note:} don't pass in UCSC build IDs (e.g. \code{"hg38"}).}
 
 \item{gffFile}{\code{character(1)}.
 GFF/GTF (General Feature Format) file.
@@ -206,7 +200,7 @@ Size of the text label.}
 
 \item{labels}{\code{list}.
 ggplot2 labels.
-See \code{\link[ggplot2:labs]{ggplot2::labs()}} for details.}
+See \code{ggplot2::labs()} for details.}
 
 \item{lfcThreshold}{\code{numeric(1)} or \code{NULL}.
 Log (base 2) fold change ratio cutoff threshold.
@@ -254,6 +248,8 @@ Number of top features to label.}
 
 \item{nullOK}{\code{logical(1)}.
 If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
+
+\item{object}{Object.}
 
 \item{ordered}{\code{logical(1)}.}
 
@@ -315,9 +311,9 @@ to the first argument in the \code{character} vector.}
 
 \item{rowData}{\code{DataFrame}.
 Metadata describing the assay rows, if genomic ranges are not available.
-\emph{Use rowRanges (GRanges) instead, if possible}.}
+\emph{Use \code{rowRanges} (\code{GenomicRanges}) instead, if possible}.}
 
-\item{rowRanges}{\code{GRanges} or \code{GRangesList}.
+\item{rowRanges}{\code{GenomicRanges} or \code{GenomicRangesList}.
 Genomic ranges (e.g. genome annotations). Metadata describing the assay
 rows.}
 
@@ -357,7 +353,7 @@ Title.}
 
 \item{traceback}{\code{logical(1)}.
 Include traceback in error message.
-See \code{\link[base:traceback]{traceback()}} for details.
+See \code{traceback()} for details.
 \code{rlang::entrace()} also works nicely and can be set in \code{.Rprofile}.}
 
 \item{trans}{\code{character(1)}.
@@ -391,6 +387,10 @@ Uniform Resource Locator (URL).}
 
 \item{verbose}{\code{logical(1)}.
 Run the function with verbose output.}
+
+\item{x}{Object.}
+
+\item{y}{Object.}
 
 \item{yaml}{\code{list}.
 YAML metadata.}
