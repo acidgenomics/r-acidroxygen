@@ -1,3 +1,7 @@
+# AcidRoxygen 0.2.6 (2022-04-29)
+
+- Updated R dependency to 4.2.
+
 # AcidRoxygen 0.2.5 (2022-03-22)
 
 - Minor parameter tweaks.
