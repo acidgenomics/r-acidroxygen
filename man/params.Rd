@@ -83,8 +83,10 @@ Desired ggplot2 color scale. Must supply discrete values. When set \code{NULL},
 the default ggplot2 color palette will be used. If manual color definitions
 are desired, we recommend using \code{ggplot2::scale_color_manual()}.
 
-To set the discrete color palette globally, use:\preformatted{options("acid.color.discrete" = ggplot2::scale_color_viridis_d())
-}}
+To set the discrete color palette globally, use:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{options("acid.color.discrete" = ggplot2::scale_color_viridis_d())
+}\if{html}{\out{</div>}}}
 
 \item{compress}{\code{logical(1)} or \code{character(1)}.
 These character strings are currently allowed for \code{\link[base:save]{save()}}:
@@ -138,8 +140,10 @@ Desired ggplot2 fill scale. Must supply discrete values. When set to
 \code{NULL}, the default ggplot2 color palette will be used. If manual color
 definitions are desired, we recommend using \code{ggplot2::scale_fill_manual()}.
 
-To set the discrete fill palette globally, use:\preformatted{options("acid.fill.discrete" = ggplot2::scale_fill_viridis_d())
-}}
+To set the discrete fill palette globally, use:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{options("acid.fill.discrete" = ggplot2::scale_fill_viridis_d())
+}\if{html}{\out{</div>}}}
 
 \item{flip}{\code{logical(1)}.
 Flip x and y axes. Recommended for plots containing many samples.}
@@ -172,8 +176,10 @@ Markdown header level.}
 \item{i}{Indices specifying elements to extract or replace. Indices are \code{numeric} or
 \code{character} vectors, empty (\code{missing}), or \code{NULL}.
 
-For more information:\preformatted{help(topic = "Extract", package = "base")
-}}
+For more information:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{help(topic = "Extract", package = "base")
+}\if{html}{\out{</div>}}}
 
 \item{ignoreTxVersion}{\code{logical(1)}. Don't the include the transcript version
 in the identifier. Only applies when \code{level = "transcripts"}. This
@@ -189,8 +195,10 @@ Corresponds to factors describing the columns of the object.}
 \item{j}{Indices specifying elements to extract or replace. Indices are \code{numeric} or
 \code{character} vectors, empty (\code{missing}), or \code{NULL}.
 
-For more information:\preformatted{help(topic = "Extract", package = "base")
-}}
+For more information:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{help(topic = "Extract", package = "base")
+}\if{html}{\out{</div>}}}
 
 \item{label}{\code{logical(1)}.
 Superimpose sample text labels on the plot.}
@@ -359,8 +367,10 @@ See \code{traceback()} for details.
 \item{trans}{\code{character(1)}.
 Name of the axis scale transformation to apply.
 
-For more information:\preformatted{help(topic = "scale_x_continuous", package = "ggplot2")
-}}
+For more information:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{help(topic = "scale_x_continuous", package = "ggplot2")
+}\if{html}{\out{</div>}}}
 
 \item{transgeneNames}{\code{character}.
 Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).}
