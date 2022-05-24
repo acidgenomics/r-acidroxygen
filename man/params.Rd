@@ -117,8 +117,8 @@ Directory path.}
 \item{direction}{\code{character(1)}.
 Include \code{"both"}, \code{"up"}, or \code{"down"} directions.}
 
-\item{ensemblRelease, release}{\code{integer(1)}.
-Ensembl release version (e.g. \code{90}). We recommend setting this value if
+\item{ensemblRelease}{\code{integer(1)}.
+Ensembl release version (e.g. \code{100}). We recommend setting this value if
 possible, for improved reproducibility. When left unset, the latest release
 available via AnnotationHub/ensembldb is used. Note that the latest version
 available can vary, depending on the versions of AnnotationHub and
@@ -309,6 +309,13 @@ List containing matrices of cell coordinates in reduced space.}
 
 \item{reduction}{\code{vector(1)}.
 Dimension reduction name or index position.}
+
+\item{release}{\code{integer(1)}.
+Ensembl release version (e.g. \code{100}). We recommend setting this value if
+possible, for improved reproducibility. When left unset, the latest release
+available via AnnotationHub/ensembldb is used. Note that the latest version
+available can vary, depending on the versions of AnnotationHub and
+ensembldb in use.}
 
 \item{removeNA}{\code{logical(1)}.
 Remove \code{NA} values from calculations.}

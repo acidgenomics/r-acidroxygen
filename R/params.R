@@ -118,8 +118,8 @@
 #' @param direction `character(1)`.
 #' Include `"both"`, `"up"`, or `"down"` directions.
 #'
-#' @param ensemblRelease,release `integer(1)`.
-#' Ensembl release version (e.g. `90`). We recommend setting this value if
+#' @param ensemblRelease `integer(1)`.
+#' Ensembl release version (e.g. `100`). We recommend setting this value if
 #' possible, for improved reproducibility. When left unset, the latest release
 #' available via AnnotationHub/ensembldb is used. Note that the latest version
 #' available can vary, depending on the versions of AnnotationHub and
@@ -314,6 +314,13 @@
 #'
 #' @param reduction `vector(1)`.
 #' Dimension reduction name or index position.
+#'
+#' @param release `integer(1)`.
+#' Ensembl release version (e.g. `100`). We recommend setting this value if
+#' possible, for improved reproducibility. When left unset, the latest release
+#' available via AnnotationHub/ensembldb is used. Note that the latest version
+#' available can vary, depending on the versions of AnnotationHub and
+#' ensembldb in use.
 #'
 #' @param removeNA `logical(1)`.
 #' Remove `NA` values from calculations.
