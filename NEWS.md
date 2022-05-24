@@ -1,3 +1,7 @@
+# AcidRoxygen 0.2.7 (2022-05-240
+
+- Reworked handling of `ensemblRelease` and `release` params.
+
 # AcidRoxygen 0.2.6 (2022-04-29)
 
 - Updated R dependency to 4.2.
