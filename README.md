@@ -1,5 +1,7 @@
 # AcidRoxygen
 
+![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)
+
 Shared [roxygen2][] documentation for [Acid Genomics][] packages.
 
 ## Installation
