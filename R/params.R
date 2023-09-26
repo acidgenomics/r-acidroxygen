@@ -151,9 +151,9 @@
 #'
 #' @param fun `function`.
 #'
-#' @param gene2symbol `Gene2Symbol`.
+#' @param gene2symbol `GeneToSymbol`.
 #' Gene-to-symbol mappings. Must contain `geneId` and `geneName` columns. See
-#' `Gene2Symbol` for more information.
+#' `GeneToSymbol` for more information.
 #'
 #' @param genes `character`.
 #' Gene identifiers.
@@ -391,7 +391,7 @@
 #' @param trendline `logical(1)`.
 #' Include trendline on plot.
 #'
-#' @param tx2gene `Tx2Gene`.
+#' @param tx2gene `TxToGene`.
 #' Transcript-to-gene mappings.
 #'
 #' @param unicode `logical(1)`.

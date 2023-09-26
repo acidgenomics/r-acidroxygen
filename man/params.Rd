@@ -150,9 +150,9 @@ Flip x and y axes. Recommended for plots containing many samples.}
 
 \item{fun}{\code{function}.}
 
-\item{gene2symbol}{\code{Gene2Symbol}.
+\item{gene2symbol}{\code{GeneToSymbol}.
 Gene-to-symbol mappings. Must contain \code{geneId} and \code{geneName} columns. See
-\code{Gene2Symbol} for more information.}
+\code{GeneToSymbol} for more information.}
 
 \item{genes}{\code{character}.
 Gene identifiers.}
@@ -385,7 +385,7 @@ Vector indicating which assay rows denote transgenes (e.g. EGFP, TDTOMATO).}
 \item{trendline}{\code{logical(1)}.
 Include trendline on plot.}
 
-\item{tx2gene}{\code{Tx2Gene}.
+\item{tx2gene}{\code{TxToGene}.
 Transcript-to-gene mappings.}
 
 \item{unicode}{\code{logical(1)}.
