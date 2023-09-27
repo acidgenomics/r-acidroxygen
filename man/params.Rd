@@ -254,7 +254,7 @@ Number to include.}
 \item{ntop}{\code{integer(1)}.
 Number of top features to label.}
 
-\item{nullOK}{\code{logical(1)}.
+\item{nullOk}{\code{logical(1)}.
 If set to \code{TRUE}, \code{x} may also be \code{NULL}.}
 
 \item{object}{Object.}
@@ -317,7 +317,7 @@ available via AnnotationHub/ensembldb is used. Note that the latest version
 available can vary, depending on the versions of AnnotationHub and
 ensembldb in use.}
 
-\item{removeNA}{\code{logical(1)}.
+\item{removeNa}{\code{logical(1)}.
 Remove \code{NA} values from calculations.}
 
 \item{return}{\code{character(1)}.

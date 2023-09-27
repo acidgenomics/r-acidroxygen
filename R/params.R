@@ -259,7 +259,7 @@
 #' @param ntop `integer(1)`.
 #' Number of top features to label.
 #'
-#' @param nullOK `logical(1)`.
+#' @param nullOk `logical(1)`.
 #' If set to `TRUE`, `x` may also be `NULL`.
 #'
 #' @param object Object.
@@ -322,7 +322,7 @@
 #' available can vary, depending on the versions of AnnotationHub and
 #' ensembldb in use.
 #'
-#' @param removeNA `logical(1)`.
+#' @param removeNa `logical(1)`.
 #' Remove `NA` values from calculations.
 #'
 #' @param return `character(1)`.
