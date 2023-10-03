@@ -1,6 +1,6 @@
 # Release notes
 
-## AcidRoxygen 0.2.8 (2023-10-03)
+## AcidRoxygen 0.3.0 (2023-10-03)
 
 - Enforcing strict camel case in parameter (argument) names.
 
