@@ -1,5 +1,10 @@
 # Release notes
 
+## AcidRoxygen 0.3.1 (2024-03-27)
+
+- Renamed `gene2symbol` param to `geneToSymbol`.
+- Renamed `tx2gene` param to `txToGene`.
+
 ## AcidRoxygen 0.3.0 (2023-10-03)
 
 - Enforcing strict camel case in parameter (argument) names.
