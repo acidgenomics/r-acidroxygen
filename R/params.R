@@ -151,7 +151,7 @@
 #'
 #' @param fun `function`.
 #'
-#' @param gene2symbol `GeneToSymbol`.
+#' @param geneToSymbol `GeneToSymbol`.
 #' Gene-to-symbol mappings. Must contain `geneId` and `geneName` columns. See
 #' `GeneToSymbol` for more information.
 #'
@@ -185,8 +185,7 @@
 #' ```
 #'
 #' @param ignoreTxVersion `logical(1)`. Don't the include the transcript version
-#' in the identifier. Only applies when `level = "transcripts"`. This
-#' simplifies identifier matching when generating a `tx2gene` file.
+#' in the identifier.
 #'
 #' @param inherits `logical(1)`.
 #' Should the enclosing frames of the `environment` be searched?
@@ -391,7 +390,7 @@
 #' @param trendline `logical(1)`.
 #' Include trendline on plot.
 #'
-#' @param tx2gene `TxToGene`.
+#' @param txToGene `TxToGene`.
 #' Transcript-to-gene mappings.
 #'
 #' @param unicode `logical(1)`.
