@@ -1,5 +1,9 @@
 # Release notes
 
+## AcidRoxygen 0.3.2 (2025-03-24)
+
+- Decreased R dependency from 4.3 to 4.0.
+
 ## AcidRoxygen 0.3.1 (2024-03-27)
 
 - Renamed `gene2symbol` param to `geneToSymbol`.
