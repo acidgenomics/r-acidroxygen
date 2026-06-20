@@ -1,5 +1,16 @@
 # Release notes
 
+## AcidRoxygen 0.3.3 (2026-06-19)
+
+License changes:
+
+- Relicensed from AGPL-3 to Apache 2.0.
+
+Minor changes:
+
+- Modernized tooling: removed per-package `.lintr` in favour of global
+  `~/.lintr`; added `air.toml`; migrated to roxygen2 8.0.
+
 ## AcidRoxygen 0.3.2 (2025-03-24)
 
 - Decreased R dependency from 4.3 to 4.0.
