@@ -1,5 +1,3 @@
-# Release notes
-
 ## AcidRoxygen 0.3.3 (2026-06-19)
 
 License changes:

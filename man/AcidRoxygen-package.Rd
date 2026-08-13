@@ -11,7 +11,7 @@ Shared roxygen2 documentation for Acid Genomics packages.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://r.acidgenomics.com/packages/acidroxygen/}
+  \item \url{https://r.acidgenomics.com/acidroxygen/}
   \item \url{https://github.com/acidgenomics/r-acidroxygen/}
   \item Report bugs at \url{https://github.com/acidgenomics/r-acidroxygen/issues/}
 }
